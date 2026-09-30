@@ -85,9 +85,7 @@ hr {
 }
 
 section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: var(--justify-important);
+  display: block;
 }
 
 section img,
