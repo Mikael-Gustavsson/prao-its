@@ -6,7 +6,7 @@ Material och en publicerad webbplats för en PRAO-vecka på ITS för elever i å
 
 - `doc/` – ursprunglig veckoplan som markdown (publiceras inte).
 - `site/` – webbplatsen som vanliga HTML-sidor (veckoplan, schema, mål med mera) med MVP.css som stilmall.
-- `site/spel/` – där eleverna bygger sitt eget projekt med HTML, CSS och JavaScript.
+- `site/spel/` – där eleven bygger sitt eget projekt med HTML, CSS och JavaScript.
 - `.github/workflows/pages.yml` – publicerar webbplatsen till GitHub Pages vid varje push till `main`.
 
 ## Arbetssätt

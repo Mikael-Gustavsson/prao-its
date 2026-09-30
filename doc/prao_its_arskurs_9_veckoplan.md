@@ -2,25 +2,26 @@
 
 ## Översikt
 
-Detta dokument beskriver ett förslag för en veckas PRAO för två elever i årskurs 9 på ITS vid Umeå universitet.
+Detta dokument beskriver ett förslag för en veckas PRAO för en eller två elever i årskurs 9 på ITS vid Umeå universitet.
 
-Veckan ska ge eleverna:
+Veckan ska ge eleven:
 
 - En förståelse för vad ITS gör.
 - En inblick i flera olika IT-yrken.
-- Erfarenhet av att intervjua fem anställda.
+- Erfarenhet av att planera med AI, genomföra, spela in (med tillstånd), transkribera och sammanfatta intervjuer med fem anställda.
+- Träning i att hantera inspelningar etiskt och skydda den som intervjuas.
 - En grundläggande bild av hur en programmerare arbetar.
 - Praktisk erfarenhet av VS Code, GitHub och GitHub Copilot.
 - Erfarenhet av att planera, skapa, testa och visa upp ett litet webbaserat spel.
 - Träning i att använda en AI-agent som stöd utan att okritiskt kopiera dess svar.
 
-Upplägget är anpassat för nybörjare i årskurs 9. Fokus ligger på nyfikenhet, arbetsprocess, problemlösning och ett synligt resultat. Målet är inte att eleverna ska lära sig alla tekniker på en vecka.
+Upplägget är anpassat för nybörjare i årskurs 9. Fokus ligger på nyfikenhet, arbetsprocess, problemlösning och ett synligt resultat. Målet är inte att eleven ska lära sig alla tekniker på en vecka.
 
 ---
 
 ## Ramar för veckan
 
-- **Antal elever:** 2
+- **Antal elever:** 1-2
 - **Målgrupp:** Årskurs 9
 - **Plats:** ITS, Umeå universitet
 - **Arbetstid:** 09.00-15.30
@@ -28,7 +29,7 @@ Upplägget är anpassat för nybörjare i årskurs 9. Fokus ligger på nyfikenhe
 - **Förmiddagsfika:** 09.30-10.00
 - **Lunch:** 11.30-12.30
 - **Eftermiddagsfika:** 14.30-15.00
-- **Arbetsform:** Eleverna arbetar huvudsakligen tillsammans
+- **Arbetsform:** Eleven arbetar ensam eller tillsammans med en annan elev, beroende på närvaro
 - **Slutmål:** Ett litet webbaserat spel som kan köras lokalt och demonstreras på fredagen
 
 ### Pedagogiska principer
@@ -38,14 +39,15 @@ Upplägget är anpassat för nybörjare i årskurs 9. Fokus ligger på nyfikenhe
 - Små steg som går att testa var för sig.
 - Regelbundna byten av arbetsroller.
 - Frågor och förståelse är viktigare än stor mängd kod.
-- Docker är en demonstration eller bonus, inte ett krav.
-- Eleverna arbetar aldrig med riktiga personuppgifter, produktionssystem eller intern källkod.
+- Spelet behöver inte Docker. Docker är i så fall endast ett frivilligt stretch goal.
+- Eleven arbetar aldrig med produktionssystem eller intern källkod. Personuppgifter förekommer endast i intervjuinspelningar och hanteras enligt reglerna för intervjuer.
+
 
 ---
 
 ## Förväntat resultat efter veckan
 
-Eleverna ska efter veckan kunna beskriva:
+Eleven ska efter veckan kunna beskriva:
 
 - Vad ITS gör.
 - Minst fem olika yrkesroller inom ITS.
@@ -55,10 +57,12 @@ Eleverna ska efter veckan kunna beskriva:
 - Hur man ber GitHub Copilot om hjälp stegvis.
 - Hur man provar och granskar AI-genererade förslag.
 - Hur man sparar kod med en enkel commit och push till GitHub.
-- Hur deras spel fungerar och hur de testade det.
-- Ett problem de stötte på och hur de löste det.
+- Hur spelet fungerar och hur det testades.
+- Ett problem som eleven stötte på och hur det löstes.
+- Hur en intervju planeras med AI, spelas in med tillstånd, transkriberas och sammanfattas.
+- Hur en inspelning skyddas och hanteras etiskt.
 
-Eleverna behöver inte förstå varje kodrad eller behärska avancerad Git, Docker eller JavaScript.
+Eleven behöver inte förstå varje kodrad eller behärska avancerad Git eller JavaScript.
 
 ---
 
@@ -75,7 +79,7 @@ Varje elev behöver före eller i början av veckan:
 - Möjlighet att verifiera sin e-postadress.
 - Godkännande enligt skolans och universitetets rutiner för minderåriga och externa molntjänster.
 
-Eleverna bör välja neutrala användarnamn. Fullständigt namn, skola, klass, privat e-postadress och andra personuppgifter ska inte publiceras i projektet.
+Eleven bör välja ett neutralt användarnamn. Fullständigt namn, skola, klass, privat e-postadress och andra personuppgifter ska inte publiceras i projektet.
 
 ## Tillfällig anknytning till ITS GitHub Enterprise
 
@@ -83,10 +87,10 @@ ITS GitHub-administratör ska före veckan besluta vilken kontomodell som gälle
 
 ### Rekommenderad modell för en kort PRAO
 
-1. Eleverna använder egna personliga GitHub-konton.
+1. Eleven använder ett eget personligt GitHub-konto.
 2. Kontona bjuds tillfälligt in till en avgränsad ITS-organisation, ett team eller specifika privata repositoryn.
-3. Eleverna får endast den behörighet som behövs för PRAO-projektet.
-4. Eleverna tilldelas varsin tillfällig GitHub Copilot-licens.
+3. Eleven får endast den behörighet som behövs för PRAO-projektet.
+4. Eleven tilldelas en tillfällig GitHub Copilot-licens.
 5. All ITS-åtkomst och alla tillfälliga licenser tas bort efter veckan.
 
 ### Behörighetsprinciper
@@ -98,7 +102,7 @@ ITS GitHub-administratör ska före veckan besluta vilken kontomodell som gälle
 - Använd endast exempeldata och spelkod.
 - Publicera inte spelet på internet om detta inte har godkänts i förväg.
 
-Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-administratören avgöra om andra typer av konton krävs. Kontomodellen ska vara beslutad och testad innan eleverna anländer.
+Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-administratören avgöra om andra typer av konton krävs. Kontomodellen ska vara beslutad och testad innan eleven anländer.
 
 ---
 
@@ -106,32 +110,34 @@ Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-adm
 
 ## Minst en vecka före
 
-- [ ] Kontrollera att båda eleverna har fungerande e-postadresser.
-- [ ] Bestäm vilken typ av GitHub-konto eleverna ska använda.
+- [ ] Kontrollera att eleven har en fungerande e-postadress.
+- [ ] Bestäm vilken typ av GitHub-konto eleven ska använda.
 - [ ] Kontrollera rutiner för minderåriga och externa molntjänster.
 - [ ] Förankra upplägget med GitHub Enterprise-administratören.
-- [ ] Säkerställ att eleverna kan bjudas in med begränsad behörighet.
-- [ ] Reservera två GitHub Copilot-licenser.
+- [ ] Säkerställ att eleven kan bjudas in med begränsad behörighet.
+- [ ] Reservera en GitHub Copilot-licens per elev.
 - [ ] Skapa privata och avgränsade PRAO-repositoryn.
-- [ ] Boka fem intervjupersoner med olika yrkesroller.
+- [ ] Boka fem intervjupersoner med olika yrkesroller och meddela att intervjun spelas in och varför.
+- [ ] Förbered en enkel samtyckesrutin och ett sätt att transkribera ljud.
+- [ ] Bestäm var inspelningar och transkriptioner lagras, vem som har åtkomst och när de raderas.
 - [ ] Förbered ett enkelt startprojekt för spelet.
 - [ ] Förbered ett lokalt reservprojekt som fungerar utan GitHub och Copilot.
-- [ ] Testa nätverk, GitHub, Copilot och Docker i aktuell datormiljö.
+- [ ] Testa nätverk, GitHub, Copilot och ljudinspelning i aktuell datormiljö.
 - [ ] Säkerställ att inga känsliga system eller uppgifter kommer att visas.
 - [ ] Utse en huvudhandledare och en reservperson.
-- [ ] Informera berörda medarbetare om elevernas tider och upplägg.
+- [ ] Informera berörda medarbetare om elevens tider och upplägg.
 
 ## Rekommenderad datorförberedelse
 
-Eleverna får gärna uppleva hur en utvecklingsmiljö sätts upp, men veckan ska inte vara beroende av långa installationer. Följande bör därför vara installerat eller åtminstone testat i förväg:
+Eleven får gärna uppleva hur en utvecklingsmiljö sätts upp, men veckan ska inte vara beroende av långa installationer. Följande bör därför vara installerat eller åtminstone testat i förväg:
 
 - VS Code
 - Git
 - Modern webbläsare
-- Docker, om Docker ska demonstreras
+- Verktyg för ljudinspelning och transkribering
 - Nödvändiga VS Code-tillägg
 
-Eleverna kan själva:
+Eleven kan själv:
 
 - Logga in.
 - Öppna VS Code.
@@ -144,12 +150,13 @@ Detta ger en autentisk upplevelse utan att installation och kontoproblem tar öv
 
 ---
 
-# Säkerhetsregler för eleverna
+# Säkerhetsregler för eleven
 
 Gå igenom reglerna på måndag och håll dem synliga under veckan.
 
 1. Lägg aldrig lösenord, nycklar eller tokens i koden.
 2. Lägg aldrig riktiga personuppgifter i spelet eller README-filen.
+   Spela endast in intervjuer med uttryckligt tillstånd. Lägg inte inspelningar eller transkriptioner i GitHub-repositoryt.
 3. Kopiera inte intern universitetskod eller intern information till Copilot.
 4. Skriv inte information från interna system i frågor till Copilot.
 5. Installera inte program eller tillägg utan att fråga handledaren.
@@ -159,9 +166,9 @@ Gå igenom reglerna på måndag och håll dem synliga under veckan.
 
 ---
 
-# Arbetssätt för två elever
+# Arbetssätt för en eller två elever
 
-För att båda ska vara aktiva byter eleverna roller ungefär var 30:e minut.
+Om två elever arbetar samtidigt byter de roller ungefär var 30:e minut. Arbetar eleven ensam tar eleven båda rollerna och växlar medvetet mellan dem.
 
 ## Pilot
 
@@ -174,9 +181,9 @@ För att båda ska vara aktiva byter eleverna roller ungefär var 30:e minut.
 - Läser uppgiften.
 - Hjälper till att formulera frågor till Copilot.
 - Antecknar vad som har testats.
-- Kontrollerar att båda förstår vad nästa steg är.
+- Kontrollerar att alla som deltar förstår vad nästa steg är.
 
-Rollerna är likvärdiga. Ingen elev ska vara permanent programmerare eller hjälpare.
+Rollerna är likvärdiga. Ingen elev ska vara permanent programmerare eller hjälpare när två arbetar tillsammans.
 
 ## Rekommenderad arbetscykel
 
@@ -194,7 +201,7 @@ Ett längre arbetspass delas upp så här:
 
 ## Måndag: Upptäcka ITS och komma igång
 
-**Dagens mål:** Eleverna ska känna sig välkomna, förstå veckans mål, möta sin första yrkesroll och få ett synligt tekniskt resultat.
+**Dagens mål:** Eleven ska känna sig välkommen, förstå veckans mål, möta sin första yrkesroll och få ett synligt tekniskt resultat.
 
 | Tid | Aktivitet |
 |---|---|
@@ -204,7 +211,7 @@ Ett längre arbetspass delas upp så här:
 | 10.30-11.00 | Informationssäkerhet, personuppgifter, lösenord och Copilot-regler |
 | 11.00-11.30 | Kontrollera GitHub-konton, verifiera e-post och acceptera ITS-inbjudan |
 | 11.30-12.30 | Lunch |
-| 12.30-13.00 | Intervju 1: systemutvecklare |
+| 12.30-13.00 | Intervju 1: systemutvecklare (fråga om tillstånd att spela in, spela in, transkribera efteråt) |
 | 13.00-13.30 | Introduktion till VS Code, GitHub och projektets filer |
 | 13.30-14.30 | Klona startprojektet och ändra exempelvis rubrik, färger och spelinstruktion |
 | 14.30-15.00 | Fika |
@@ -213,7 +220,7 @@ Ett längre arbetspass delas upp så här:
 
 ### Måndagens kontrollpunkter
 
-Eleverna ska kunna:
+Eleven ska kunna:
 
 - Logga in på GitHub.
 - Läsa e-post från GitHub.
@@ -230,7 +237,7 @@ Eleverna ska kunna:
 Lägg till följande i `README.md`:
 
 - Förnamn eller smeknamn.
-- Tre saker ni vill lära er under veckan.
+- Tre saker du vill lära dig under veckan.
 - Ett förslag på hur spelet ska se ut.
 
 Undvik efternamn, skola, klass och privata kontaktuppgifter.
@@ -245,9 +252,9 @@ Undvik efternamn, skola, klass och privata kontaktuppgifter.
 |---|---|
 | 09.00-09.30 | Kort introduktion till HTML, CSS, JavaScript och webbläsaren |
 | 09.30-10.00 | Fika |
-| 10.00-10.40 | Copilot-övning: jämför vaga och tydliga frågor |
-| 10.40-11.10 | Intervju 2: IT-support eller servicedesk |
-| 11.10-11.30 | Sammanfatta intervjun och planera eftermiddagen |
+| 10.00-10.40 | Copilot-övning: jämför vaga och tydliga frågor och planera intervjun med AI-verktyget i VS Code |
+| 10.40-11.10 | Intervju 2: IT-support eller servicedesk (inspelad med tillstånd) |
+| 11.10-11.30 | Transkribera inspelningen, skapa en kort AI-sammanfattning och planera eftermiddagen |
 | 11.30-12.30 | Lunch |
 | 12.30-13.00 | Rita spelets gränssnitt på papper eller whiteboard |
 | 13.00-14.00 | Skapa eller ändra spelplan, rubrik, instruktioner och startknapp |
@@ -258,9 +265,9 @@ Undvik efternamn, skola, klass och privata kontaktuppgifter.
 
 ### Resultat efter tisdagen
 
-- Eleverna kan beskriva HTML, CSS och JavaScript med egna ord.
+- Eleven kan beskriva HTML, CSS och JavaScript med egna ord.
 - Spelet har en synlig spelplan och tydliga instruktioner.
-- Eleverna har tränat på att ställa tydliga frågor till Copilot.
+- Eleven har tränat på att ställa tydliga frågor till Copilot.
 - Minst en ändring är sparad i GitHub.
 
 ---
@@ -273,8 +280,8 @@ Undvik efternamn, skola, klass och privata kontaktuppgifter.
 |---|---|
 | 09.00-09.30 | Planera spelregler, styrning, vinst och förlust |
 | 09.30-10.00 | Fika |
-| 10.00-10.30 | Intervju 3: drift-, nätverks- eller DevOps-tekniker |
-| 10.30-11.00 | Sammanfatta intervjun och dela upp programmeringen i små uppgifter |
+| 10.00-10.30 | Intervju 3: drift-, nätverks- eller DevOps-tekniker (planerad med AI, inspelad med tillstånd) |
+| 10.30-11.00 | Transkribera, skapa AI-sammanfattning och dela upp programmeringen i små uppgifter |
 | 11.00-11.30 | Börja med tangentbordsstyrning eller annan enkel interaktion |
 | 11.30-12.30 | Lunch |
 | 12.30-13.15 | Fortsätta med spelarens rörelse och testa gränser |
@@ -295,7 +302,7 @@ Undvik efternamn, skola, klass och privata kontaktuppgifter.
 - [ ] Skapa en enkel spelregel.
 - [ ] Testa efter varje liten ändring.
 
-Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara extra tillgänglig och hjälpa eleverna att minska uppgiften om de fastnar.
+Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara extra tillgänglig och hjälpa eleven att minska uppgiften vid problem.
 
 ---
 
@@ -307,8 +314,8 @@ Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara 
 |---|---|
 | 09.00-09.30 | Genomgång av buggar, felmeddelanden och enkel felsökning |
 | 09.30-10.00 | Fika |
-| 10.00-10.30 | Intervju 4: UX-designer, testare eller projektledare |
-| 10.30-11.00 | Sammanfatta intervjun och göra en enkel testplan |
+| 10.00-10.30 | Intervju 4: UX-designer, testare eller projektledare (planerad med AI, inspelad med tillstånd) |
+| 10.30-11.00 | Transkribera, skapa AI-sammanfattning och göra en enkel testplan |
 | 11.00-11.30 | Felsökningsövning med ett avsiktligt enkelt fel |
 | 11.30-12.30 | Lunch |
 | 12.30-13.15 | Lägga till poäng, vinst, förlust eller starta om |
@@ -316,32 +323,21 @@ Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara 
 | 13.25-14.10 | Förbättra färger, instruktioner och spelkänsla |
 | 14.10-14.30 | Testa spelet och prioritera återstående fel |
 | 14.30-15.00 | Fika |
-| 15.00-15.20 | Kort handledardemonstration av Docker, frivillig provkörning |
+| 15.00-15.20 | Förbättra spelet efter testningen |
 | 15.20-15.30 | Commit, loggbok och plan för fredagen |
-
-### Docker på lämplig nivå
-
-Docker ska inte vara ett villkor för att eleverna ska lyckas. Handledaren kan:
-
-- Förklara varför en container kan vara användbar.
-- Visa en enkel färdig `Dockerfile`.
-- Visa hur ett kommando startar spelet.
-- Låta eleverna prova om tid och intresse finns.
-
-Undvik att lägga mycket tid på containerkonfiguration, nätverksportar eller felsökning av Docker Desktop.
 
 ---
 
 ## Fredag: Yrkesbild, presentation och avslutning
 
-**Dagens mål:** Sammanfatta veckan, färdigställa ett stabilt resultat och visa vad eleverna har lärt sig.
+**Dagens mål:** Sammanfatta veckan, färdigställa ett stabilt resultat och visa vad eleven har lärt sig.
 
 | Tid | Aktivitet |
 |---|---|
 | 09.00-09.30 | Veckoretro: vad är klart, vad återstår och vad är viktigast? |
 | 09.30-10.00 | Fika |
-| 10.00-10.30 | Intervju 5: IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare |
-| 10.30-11.00 | Jämföra de fem yrkesrollerna |
+| 10.00-10.30 | Intervju 5: IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare (planerad med AI, inspelad med tillstånd) |
+| 10.30-11.00 | Transkribera, skapa AI-sammanfattning och jämföra de fem yrkesrollerna |
 | 11.00-11.30 | Sluttest och val av högst två små förbättringar |
 | 11.30-12.30 | Lunch |
 | 12.30-13.15 | Rätta viktiga fel och städa projektet |
@@ -367,12 +363,33 @@ Undvik att lägga till stora nya funktioner under fredagen. Ett enkelt spel som 
 
 Välj gärna personer med olika utbildningsvägar, bakgrunder och typer av arbetsuppgifter.
 
+## Arbetsflöde
+
+1. **Planera:** eleven använder AI-verktyget i VS Code för att förbereda och planera intervjun, till exempel tema, frågor och följdfrågor. Eleven granskar och ändrar förslagen själv.
+2. **Be om tillstånd:** eleven frågar intervjupersonen om det är okej att spela in och förklarar varför: veckan är en övning i att arbeta med AI, och inspelningen gör att eleven kan lyssna aktivt i stället för att anteckna allt.
+3. **Spela in:** bara om intervjupersonen säger ja. Vid nej genomförs intervjun med anteckningar.
+4. **Transkribera:** eleven transkriberar inspelningen.
+5. **Sammanfatta:** eleven använder AI för att skapa en kort intervjusammanfattning och kontrollerar att den stämmer med transkriptionen.
+
+## Etik och skydd av inspelningar
+
+Eleven ska fundera på och diskutera med handledaren:
+
+- Hur får intervjupersonen information om syfte, lagring och vem som får lyssna?
+- Var sparas inspelningen, och hur skyddas den från obehöriga?
+- Hur länge sparas den, och när raderas den?
+- Vilka delar av transkriptionen är känsliga och ska tas bort eller avidentifieras innan AI används?
+- Hur kan intervjupersonen ångra sig och be om att inspelningen raderas?
+- Ska inspelningen eller transkriptionen lämnas till någon annan? Normalt nej.
+
+Inspelningar och transkriptioner hanteras endast på av handledaren anvisad plats och läggs inte i spelets repository.
+
 ## Intervjuernas längd
 
 - Sikta på 20-30 minuter per intervju.
 - Använd 5-7 frågor per intervju.
 - Låt varje intervju ha ett särskilt tema.
-- Låt eleverna turas om att fråga och anteckna.
+- Om två elever deltar turas de om att fråga och anteckna.
 
 ## Gemensam frågebank
 
@@ -390,7 +407,7 @@ Välj gärna personer med olika utbildningsvägar, bakgrunder och typer av arbet
 
 ## Sammanfattning efter varje intervju
 
-Eleverna skriver ner:
+Eleven skriver ner, med stöd av transkriptionen och AI-sammanfattningen:
 
 - En sak personen gör.
 - Ett verktyg personen använder.
@@ -404,7 +421,7 @@ Eleverna skriver ner:
 
 ## Uppdrag: Ett litet webbaserat one-shot-spel
 
-Eleverna bygger tillsammans ett litet spel inspirerat av exempelvis Arkanoid. Spelet ska vara möjligt att förstå, spela och starta om under en kort demonstration.
+Eleven bygger ett litet spel inspirerat av exempelvis Arkanoid. Spelet ska vara möjligt att förstå, spela och starta om under en kort demonstration.
 
 Arkanoid är inspiration, inte ett absolut krav. Om fullständig bollfysik och blockkollisioner blir för svårt kan spelet förenklas till att:
 
@@ -422,7 +439,6 @@ Arkanoid är inspiration, inte ett absolut krav. Om fullständig bollfysik och b
 - VS Code
 - GitHub
 - GitHub Copilot
-- Docker endast som demonstration eller bonus
 
 ## Begränsningar
 
@@ -446,7 +462,7 @@ Arkanoid är inspiration, inte ett absolut krav. Om fullständig bollfysik och b
 - Ett mål eller hinder finns.
 - Poängen eller spelstatusen kan ändras.
 - Spelet kan startas eller återställas.
-- Eleverna kan förklara vad de byggt.
+- Eleven kan förklara vad som byggts.
 
 ## Normalnivå
 
@@ -465,7 +481,7 @@ Arkanoid är inspiration, inte ett absolut krav. Om fullständig bollfysik och b
 - Ljudeffekter.
 - Pausknapp.
 - Highscore under pågående webbläsarsession.
-- Docker-körning.
+- Stretch goal: köra spelet i Docker (inte nödvändigt för spelet).
 
 Bonusfunktioner får endast påbörjas när miniminivån fungerar stabilt.
 
@@ -489,11 +505,8 @@ prao-spel/
 ├── index.html
 ├── style.css
 ├── game.js
-├── Dockerfile
 └── .gitignore
 ```
-
-`Dockerfile` kan finnas med från början men behöver inte användas av eleverna.
 
 ---
 
@@ -503,7 +516,7 @@ prao-spel/
 
 Copilot ska användas som handledare och assistent, inte som automatisk kodgenerator.
 
-Eleverna ska i första hand be Copilot om:
+Eleven ska i första hand be Copilot om:
 
 1. En enkel förklaring.
 2. En plan med små steg.
@@ -543,7 +556,7 @@ Ge inte ny kod innan vi har kontrollerat den befintliga koden.
 
 ## Kontrollfrågor för varje kodförslag
 
-Eleverna ska försöka svara på:
+Eleven ska försöka svara på:
 
 - Vad är syftet med ändringen?
 - I vilken fil ska koden ligga?
@@ -552,7 +565,7 @@ Eleverna ska försöka svara på:
 - Vad hände faktiskt?
 - Kan vi beskriva kodblocket med egna ord?
 
-Eleverna behöver inte förstå varje tecken. De ska förstå syftet med de större delarna och kunna beskriva vad de har testat.
+Eleven behöver inte förstå varje tecken. De ska förstå syftet med de större delarna och kunna beskriva vad de har testat.
 
 ---
 
@@ -560,7 +573,7 @@ Eleverna behöver inte förstå varje tecken. De ska förstå syftet med de stö
 
 GitHub-arbetet hålls medvetet enkelt.
 
-Eleverna behöver bara lära sig att:
+Eleven behöver bara lära sig att:
 
 1. Klona repositoryt.
 2. Ändra en eller flera filer.
@@ -606,9 +619,9 @@ Handledaren frågar:
 - Förstår ni förslaget tillräckligt för att prova det?
 - Vad är nästa minsta steg?
 
-## Regel när eleverna fastnar
+## Regel när eleven fastnar
 
-Om eleverna har fastnat i mer än 15 minuter ska de:
+Om eleven har fastnat i mer än 15 minuter ska eleven:
 
 1. Beskriva vad de försöker göra.
 2. Skriva ner vad de förväntade sig.
@@ -617,13 +630,13 @@ Om eleverna har fastnat i mer än 15 minuter ska de:
 5. Ställa en tydligare fråga till Copilot.
 6. Fråga handledaren om problemet kvarstår.
 
-Handledaren bör hjälpa eleverna att minska problemet, inte omedelbart skriva hela lösningen åt dem.
+Handledaren bör hjälpa eleven att minska problemet, inte omedelbart skriva hela lösningen åt dem.
 
 ---
 
 # Daglig loggbok
 
-Eleverna avslutar varje dag med att svara kort på:
+Eleven avslutar varje dag med att svara kort på:
 
 ```text
 Vad gjorde vi idag?
@@ -640,7 +653,7 @@ Loggboken kan sparas i `README.md`, i separata Markdown-filer eller på papper.
 
 # Testning
 
-Eleverna behöver inte skapa automatiserade tester. De ska däremot använda en enkel manuell testlista.
+Eleven behöver inte skapa automatiserade tester. De ska däremot använda en enkel manuell testlista.
 
 ## Exempel på testlista
 
@@ -654,7 +667,7 @@ Eleverna behöver inte skapa automatiserade tester. De ska däremot använda en 
 - [ ] Instruktionerna stämmer med styrningen.
 - [ ] En annan person förstår hur spelet spelas.
 
-Eleverna bör testa varandras delar och ge konkret återkoppling.
+Om två elever deltar bör de testa varandras delar och ge konkret återkoppling.
 
 ---
 
@@ -662,7 +675,7 @@ Eleverna bör testa varandras delar och ge konkret återkoppling.
 
 Presentation och demonstration bör vara kort, ungefär 10-15 minuter totalt.
 
-Eleverna berättar tillsammans:
+Eleven (eller eleverna tillsammans) berättar:
 
 - Vad ITS gör.
 - Vilka fem yrkesroller de mötte.
@@ -673,11 +686,11 @@ Eleverna berättar tillsammans:
 - Något de själva är stolta över.
 - Om deras bild av programmeraryrket har förändrats.
 
-Båda eleverna ska prata och visa någon del av resultatet.
+Alla deltagande elever ska prata och visa någon del av resultatet.
 
 ---
 
-# README för elevernas spel
+# README för elevens spel
 
 Projektets `README.md` bör innehålla:
 
@@ -712,7 +725,7 @@ Skriv inte privata kontaktuppgifter eller andra personuppgifter i README-filen.
 
 # Reservplan vid tekniska problem
 
-Om GitHub, Copilot, nätverk eller Docker inte fungerar ska veckan ändå kunna fortsätta.
+Om GitHub, Copilot, nätverk eller ljudinspelning inte fungerar ska veckan ändå kunna fortsätta.
 
 ## Reservaktiviteter
 
@@ -737,16 +750,17 @@ Handledaren bör ha en kopia av startprojektet på datorerna eller på ett godk�
 ## Fredag efter presentationen
 
 - [ ] Kontrollera att slutversionen av koden är sparad.
-- [ ] Bestäm om eleverna får behålla en kopia av spelet.
+- [ ] Radera intervjuinspelningar och transkriptioner enligt överenskommelse med intervjupersonerna.
+- [ ] Bestäm om eleven får behålla en kopia av spelet.
 - [ ] Ta bort GitHub Copilot-licenserna.
-- [ ] Ta bort eleverna från ITS organisation, team och privata repositoryn.
+- [ ] Ta bort eleven från ITS organisation, team och privata repositoryn.
 - [ ] Kontrollera att de inte har annan ITS-åtkomst.
 - [ ] Logga ut från GitHub i VS Code och webbläsaren.
 - [ ] Rensa lokala autentiseringstokens och sparade inloggningar.
 - [ ] Återställ eller ominstallera utlånade datorer enligt ITS rutin.
 - [ ] Dokumentera att avvecklingen är slutförd.
 
-Om eleverna ska behålla spelet bör en ren kopia överföras till deras egna repositoryn. Kopian får inte innehålla intern information, organisationsinställningar, känslig historik, tokens eller universitetsmaterial som inte får spridas.
+Om eleven ska behålla spelet bör en ren kopia överföras till elevens eget repository. Kopian får inte innehålla intern information, organisationsinställningar, känslig historik, tokens eller universitetsmaterial som inte får spridas.
 
 ---
 
@@ -760,7 +774,7 @@ Upplägget är lämpligt om ambitionsnivån hålls under kontroll.
 - Intervjuer visar bredden inom IT.
 - Pararbete skapar trygghet.
 - HTML, CSS och JavaScript ger snabbt synliga resultat.
-- Copilot kan hjälpa eleverna förbi mindre hinder.
+- Copilot kan hjälpa eleven förbi mindre hinder.
 - Fredagens demonstration ger veckan en tydlig riktning.
 
 ## Risker att hantera
@@ -768,28 +782,29 @@ Upplägget är lämpligt om ambitionsnivån hålls under kontroll.
 - För många nya verktyg samtidigt.
 - För mycket tid på installation och konton.
 - För avancerad spelmekanik.
-- Att Copilot skapar kod som eleverna inte förstår.
-- Att en elev använder tangentbordet hela tiden.
+- Att Copilot skapar kod som eleven inte förstår.
+- Att en elev använder tangentbordet hela tiden när två arbetar tillsammans.
 - För långa intervjuer eller programmeringspass.
-- Att Docker blir ett krav i stället för en inblick.
+- Att Docker tas in trots att spelet inte behöver det.
+- Att intervjuinspelningar hanteras slarvigt eller sparas för länge.
 
 ## Viktigaste anpassningarna
 
 - Förbered och testa verktygen i förväg.
-- Ge eleverna ett fungerande startprojekt.
+- Ge eleven ett fungerande startprojekt.
 - Begränsa intervjuerna till 20-30 minuter.
 - Arbeta i korta cykler.
 - Byt roller regelbundet.
 - Definiera en enkel miniminivå för spelet.
-- Gör Docker frivilligt.
+- Håll Docker utanför veckan, högst som stretch goal.
 - Bedöm förståelse och arbetssätt, inte mängden kod.
 
-Den bästa slutprodukten är inte det mest avancerade spelet. Det är ett enkelt och fungerande spel som båda eleverna kan förklara, testa och känna stolthet över.
+Den bästa slutprodukten är inte det mest avancerade spelet. Det är ett enkelt och fungerande spel som eleven kan förklara, testa och känna stolthet över.
 
 ---
 
 # Sammanfattad framgångsdefinition
 
-Veckan är lyckad om båda eleverna kan säga:
+Veckan är lyckad om eleven kan säga:
 
-> Vi vet mer om vad ITS gör, vi har mött flera olika IT-yrken, vi har byggt och testat ett litet spel och vi vet hur man kan ta hjälp av en AI-agent utan att låta den göra allt arbete.
+> Jag vet mer om vad ITS gör, jag har mött flera olika IT-yrken, jag har byggt och testat ett litet spel och jag vet hur man kan ta hjälp av en AI-agent utan att låta den göra allt arbete.
