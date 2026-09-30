@@ -1,0 +1,13 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#spelplan {
+  display: block;
+  max-width: 100%;
+  background: #222;
+  border-radius: 8px;
+}
