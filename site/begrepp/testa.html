@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testa – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Testa</h1>
+    <p>Att kontrollera att koden gör det du tror att den gör.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Varför testar man?</h2>
+      <ul>
+        <li><strong>Skydd:</strong> när du ändrar något vill du veta att du inte förstörde något annat.</li>
+        <li><strong>Tydlighet:</strong> ett test beskriver vad koden <em>ska</em> göra.</li>
+        <li><strong>Mod:</strong> med tester vågar man ändra och förbättra kod.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Bestäm först, bygg sedan</h2>
+      <p>På ITS försöker vi skriva ner <em>vad som ska hända</em> innan vi skriver koden. Det kallas ofta <strong>test först</strong>. Ett test utan ett tydligt krav är meningslöst.</p>
+      <ol>
+        <li><strong>Beskriv</strong> vad som ska hända, i vanliga ord.</li>
+        <li><strong>Kontrollera</strong> hur du skulle se att det fungerar.</li>
+        <li><strong>Bygg</strong> det minsta som behövs.</li>
+        <li><strong>Granska</strong> resultatet. Förstår du koden? Gör den det du bad om?</li>
+      </ol>
+      <p>Samma steg fungerar när du ber <a href="copilot.html">Copilot</a> om hjälp. Berätta först vad du förväntar dig, så kan du avgöra om svaret stämmer.</p>
+    </section>
+    <section>
+      <h2>Exempel: poängräkning</h2>
+      <table>
+        <thead>
+          <tr><th>Krav</th><th>Så kontrollerar jag</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Poängen börjar på 0.</td><td>Starta spelet och titta.</td></tr>
+          <tr><td>Fångar jag ett mynt blir poängen 1 högre.</td><td>Fånga ett mynt. Fånga ett till.</td></tr>
+          <tr><td>Poängen blir aldrig negativ.</td><td>Förlora direkt efter start.</td></tr>
+        </tbody>
+      </table>
+      <p>Det här är manuella tester. De är helt okej. Många programmerare skriver i stället små program som kontrollerar sådant automatiskt, men idén är densamma.</p>
+    </section>
+    <section>
+      <h2>Olika nivåer</h2>
+      <ul>
+        <li><strong>Liten del:</strong> fungerar en enda funktion, till exempel <code>arSlut()</code>?</li>
+        <li><strong>Flera delar ihop:</strong> fungerar poäng och mynt tillsammans?</li>
+        <li><strong>Hela flödet:</strong> kan en ny spelare starta, spela och förlora?</li>
+      </ul>
+      <p>Många snabba tester av små delar, färre av helheten.</p>
+    </section>
+    <section>
+      <h2>Kod som är svår att testa</h2>
+      <p>Om en funktion gör fem saker samtidigt är den svår att testa. Att den är svår att testa är ofta ett tecken på att den bör delas upp. Se <a href="bra-kod.html">Bra kod</a>.</p>
+    </section>
+    <section>
+      <h2>När något inte fungerar</h2>
+      <p>Ett test visar <em>att</em> något är fel. <a href="felsokning.html">Felsökning</a> visar <em>varför</em>.</p>
+    </section>
+  </main>
+</body>
+</html>

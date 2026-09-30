@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grenar och granskning – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Grenar och granskning</h1>
+    <p>Hur flera personer kan ändra samma projekt utan att förstöra för varandra.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Huvudgrenen</h2>
+      <p>Projektet har en huvudgren som heter <code>main</code>. Den ska alltid fungera. På den här webbplatsen är det <code>main</code> som publiceras.</p>
+    </section>
+    <section>
+      <h2>Gren</h2>
+      <p>En <strong>gren</strong> (branch) är en egen kopia av projektet där du kan ändra fritt. Går något fel påverkas inte <code>main</code>. Blir det bra läggs ändringen in i <code>main</code>.</p>
+      <p>Tänk på ett kapitel du skriver i en kopia av en bok och sedan klistrar in i originalet när det är klart.</p>
+    </section>
+    <section>
+      <h2>Så arbetar ITS</h2>
+      <ol>
+        <li>Skapa en gren för en uppgift, till exempel <code>lagg-till-poang</code>.</li>
+        <li>Ändra, testa och gör commit flera gånger.</li>
+        <li>Öppna en <strong>pull request</strong> (PR) på GitHub.</li>
+        <li>Någon annan <strong>granskar</strong> och kan ställa frågor eller föreslå ändringar.</li>
+        <li>När alla är nöjda läggs grenen in i <code>main</code> (<strong>merge</strong>) och tas bort.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Pull request</h2>
+      <p>En pull request är en begäran: <em>Jag vill lägga in mina ändringar. Kan du titta på dem först?</em> Värdet ligger i att någon faktiskt tittar, och att det finns en tydlig historik över <strong>varför</strong> något ändrades, inte bara vad.</p>
+    </section>
+    <section>
+      <h2>Att granska</h2>
+      <ul>
+        <li>Förstår jag vad ändringen gör?</li>
+        <li>Fungerar den när jag provar?</li>
+        <li>Finns det något enklare sätt?</li>
+      </ul>
+      <p>Granska även kod som Copilot har skrivit. Du är ansvarig för det som läggs in, inte assistenten.</p>
+    </section>
+    <section>
+      <h2>Bra att veta</h2>
+      <ul>
+        <li>Skriv tydliga commit-meddelanden. De läses av andra, och av dig själv om en månad.</li>
+        <li>Små ändringar är enklare att granska än stora.</li>
+        <li>Skriv aldrig om historik som redan har skickats till GitHub och som andra kan ha hämtat. Fråga handledaren om du är osäker.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Under veckan</h2>
+      <p>Du arbetar troligen direkt på <code>main</code>, vilket fungerar bra när man är ensam eller två. Att känna till grenar och pull requests är ändå bra, eftersom det är så det görs i större projekt. Fråga handledaren om du vill prova.</p>
+    </section>
+  </main>
+</body>
+</html>

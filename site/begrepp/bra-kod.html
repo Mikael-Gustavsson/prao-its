@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bra kod – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Bra kod</h1>
+    <p>Tumregler som programmerare på ITS använder. De är vägledning, inte lagar.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Huvudidén</h2>
+      <article>
+        <aside>
+          <p>Hitta det som kommer att ändras, och håll det åtskilt från resten.</p>
+        </aside>
+      </article>
+      <p>Nästan alla tumregler nedan är olika sätt att följa den idén.</p>
+    </section>
+    <section>
+      <h2>Håll det enkelt (KISS)</h2>
+      <p>Välj den enklaste lösningen som fungerar. Smart kod som ingen förstår är dålig kod, även om den fungerar.</p>
+    </section>
+    <section>
+      <h2>Bygg inte i förväg (YAGNI)</h2>
+      <p><em>You Aren't Gonna Need It.</em> Bygg det du behöver nu, inte det du kanske behöver sedan. Innan du lägger till något, fråga: <strong>Vilket problem löser det just nu?</strong> Om svaret är "kanske en dag" kan du vänta.</p>
+      <p>Den här regeln går före alla andra.</p>
+    </section>
+    <section>
+      <h2>Upprepa dig inte (DRY)</h2>
+      <p>Samma sak ska stå på ett ställe. Kopierar du samma rader tre gånger: gör en <a href="funktioner.html">funktion</a> av dem. Då räcker det att rätta en gång.</p>
+      <p>Men försiktigt: två saker som bara råkar se lika ut behöver inte slås ihop.</p>
+    </section>
+    <section>
+      <h2>En sak per del</h2>
+      <p>En funktion eller fil ska ha <strong>ett skäl att ändras</strong>. Fråga dig: vem eller vad kan göra att jag behöver ändra den här koden? Om svaret är flera orelaterade saker, dela upp.</p>
+      <pre><code>// Gör för mycket
+function uppdateraSpelet() { /* flytta, rita, räkna poäng, spela ljud */ }
+
+// Bättre
+function flyttaSpelare() { ... }
+function ritaSpelare() { ... }
+function raknaPoang() { ... }</code></pre>
+    </section>
+    <section>
+      <h2>Lägg det som ändras i data</h2>
+      <p>Gör det lätt att ändra sådant som ofta ändras, utan att röra logiken.</p>
+      <pre><code>// Svårt: ny färg kräver ny kod
+if (fiende === "röd") { ... } else if (fiende === "blå") { ... }
+
+// Lättare: ny färg kräver bara en ny rad i listan
+const fiendeHastighet = { röd: 3, blå: 5, grön: 2 };</code></pre>
+    </section>
+    <section>
+      <h2>Ta emot det du behöver</h2>
+      <p>En funktion ska få de värden den behöver som parametrar, i stället för att plocka dem från allt möjligt utanför.</p>
+      <pre><code>// Kräver att hela spelet finns
+function ärTräff() { return spel.spelare.x === spel.fiende.x; }
+
+// Behöver bara två tal
+function ärTräff(spelareX, fiendeX) { return spelareX === fiendeX; }</code></pre>
+      <p>Den andra går att testa med två tal. Den första går bara att testa med ett helt spel.</p>
+    </section>
+    <section>
+      <h2>Lukter i koden</h2>
+      <p>En <strong>kodlukt</strong> är ett tecken på att något kan behöva förbättras. Det är inte ett fel, men en varningsflagga.</p>
+      <ul>
+        <li>En mycket lång funktion eller fil som gör allt.</li>
+        <li>Samma kod på flera ställen.</li>
+        <li>Siffror och texter utspridda utan förklaring, som <code>if (x &gt; 640)</code>.</li>
+        <li>Namn som <code>a</code>, <code>tmp</code> och <code>data2</code>.</li>
+      </ul>
+      <p>Ge saker namn som säger vad de är: <code>spelarX</code> är bättre än <code>x</code>.</p>
+    </section>
+    <section>
+      <h2>Städa utan att ändra beteendet</h2>
+      <p>Att <strong>refaktorera</strong> betyder att göra koden bättre inuti utan att ändra vad den gör utåt.</p>
+      <ol>
+        <li>Kontrollera att allt fungerar innan du börjar.</li>
+        <li>Gör <strong>en</strong> liten förbättring.</li>
+        <li>Testa igen. Fungerar det fortfarande? Annars ångra.</li>
+        <li><a href="git.html">Spara</a> och gör nästa förbättring.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Omdöme är viktigast</h2>
+      <p>Reglerna är verktyg. I ett litet projekt kan det vara helt rätt att <em>inte</em> använda en regel. Att kunna säga <em>jag känner till den här regeln men den behövs inte här, och det är därför</em> visar mer förståelse än att följa alla regler blint.</p>
+    </section>
+    <section>
+      <h2>Med Copilot</h2>
+      <p><a href="copilot.html">Copilot</a> vill ofta bygga mer än du bad om. Be om det minsta som löser uppgiften och fråga: <em>behövs detta verkligen nu?</em></p>
+    </section>
+  </main>
+</body>
+</html>
