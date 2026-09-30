@@ -231,7 +231,9 @@ samp {
 }
 
 details {
+  flex: 0 0 100%;
   margin: 1.3rem 0;
+  width: 100%;
 }
 
 details summary {
