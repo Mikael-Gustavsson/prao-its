@@ -1,0 +1,43 @@
+name: Publicera till GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bygg sida från veckoplanen
+        run: |
+          sudo apt-get update && sudo apt-get install -y pandoc
+          mkdir -p _site
+          cp site/style.css _site/style.css
+          pandoc prao_its_arskurs_9_veckoplan.md -f gfm -t html5 -s \
+            --metadata title="PRAO på ITS" --metadata lang=sv \
+            -c style.css -o _site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
