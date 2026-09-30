@@ -19,19 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Bygg sida från veckoplanen
-        run: |
-          sudo apt-get update && sudo apt-get install -y pandoc
-          mkdir -p _site
-          cp site/style.css _site/style.css
-          cp -r site/spel _site/spel
-          pandoc prao_its_arskurs_9_veckoplan.md -f gfm -t html5 -s \
-            --metadata title="PRAO på ITS" --metadata lang=sv \
-            -c style.css -o _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: site
 
   deploy:
     needs: build

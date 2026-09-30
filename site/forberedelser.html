@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Förberedelser – PRAO på ITS</title>
+  <link rel="stylesheet" href="mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./">PRAO på ITS</a>
+      <ul>
+        <li><a href="bakgrund.html">Bakgrund</a></li>
+        <li><a href="mal.html">Mål</a></li>
+        <li><a href="schema.html">Schema</a></li>
+        <li><a href="intervjuer.html">Intervjuer</a></li>
+        <li><a href="arbetssatt.html">Arbetssätt</a></li>
+        <li><a href="forberedelser.html">Förberedelser</a></li>
+        <li><a href="spel/">Spelet</a></li>
+      </ul>
+    </nav>
+    <h1>Förberedelser och säkerhet</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Konton</h2>
+      <h3>E-post och GitHub</h3>
+      <p>Varje elev behöver före eller i början av veckan:</p>
+      <ul>
+        <li>En fungerande e-postadress som eleven kan läsa under veckan.</li>
+        <li>Ett eget GitHub-konto med ett unikt lösenord som inte återanvänds.</li>
+        <li>Tillgång till eventuell autentiseringsapp om tvåfaktorsautentisering krävs.</li>
+        <li>Möjlighet att verifiera sin e-postadress.</li>
+        <li>Godkännande enligt skolans och universitetets rutiner för minderåriga och externa molntjänster.</li>
+      </ul>
+      <p>Eleverna bör välja neutrala användarnamn. Fullständigt namn, skola, klass, privat e-postadress och andra personuppgifter ska inte publiceras i projektet.</p>
+
+      <h3>Tillfällig anknytning till ITS GitHub Enterprise</h3>
+      <p>ITS GitHub-administratör ska före veckan besluta vilken kontomodell som gäller. Rekommenderad modell för en kort PRAO:</p>
+      <ol>
+        <li>Eleverna använder egna personliga GitHub-konton.</li>
+        <li>Kontona bjuds tillfälligt in till en avgränsad ITS-organisation, ett team eller specifika privata repositoryn.</li>
+        <li>Eleverna får endast den behörighet som behövs för PRAO-projektet.</li>
+        <li>Eleverna tilldelas varsin tillfällig GitHub Copilot-licens.</li>
+        <li>All ITS-åtkomst och alla tillfälliga licenser tas bort efter veckan.</li>
+      </ol>
+      <details>
+        <summary>Behörighetsprinciper</summary>
+        <ul>
+          <li>Använd privata PRAO-repositoryn.</li>
+          <li>Ge normalt skrivbehörighet, inte administratörsbehörighet.</li>
+          <li>Ge ingen åtkomst till produktionskod eller ordinarie interna repositoryn.</li>
+          <li>Använd vid behov ett särskilt tillfälligt team, exempelvis <code>prao-vecka</code>.</li>
+          <li>Använd endast exempeldata och spelkod.</li>
+          <li>Publicera inte spelet på internet om detta inte har godkänts i förväg.</li>
+        </ul>
+        <p>Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-administratören avgöra om andra typer av konton krävs. Kontomodellen ska vara beslutad och testad innan eleverna anländer.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Minst en vecka före</h2>
+      <ul>
+        <li>Kontrollera att båda eleverna har fungerande e-postadresser.</li>
+        <li>Bestäm vilken typ av GitHub-konto eleverna ska använda.</li>
+        <li>Kontrollera rutiner för minderåriga och externa molntjänster.</li>
+        <li>Förankra upplägget med GitHub Enterprise-administratören.</li>
+        <li>Säkerställ att eleverna kan bjudas in med begränsad behörighet.</li>
+        <li>Reservera två GitHub Copilot-licenser.</li>
+        <li>Skapa privata och avgränsade PRAO-repositoryn.</li>
+        <li>Boka fem intervjupersoner med olika yrkesroller.</li>
+        <li>Förbered ett enkelt startprojekt för spelet.</li>
+        <li>Förbered ett lokalt reservprojekt som fungerar utan GitHub och Copilot.</li>
+        <li>Testa nätverk, GitHub, Copilot och Docker i aktuell datormiljö.</li>
+        <li>Säkerställ att inga känsliga system eller uppgifter kommer att visas.</li>
+        <li>Utse en huvudhandledare och en reservperson.</li>
+        <li>Informera berörda medarbetare om elevernas tider och upplägg.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Datorförberedelse</h2>
+      <p>Veckan ska inte vara beroende av långa installationer. Följande bör vara installerat eller testat i förväg:</p>
+      <ul>
+        <li>VS Code och nödvändiga tillägg</li>
+        <li>Git</li>
+        <li>Modern webbläsare</li>
+        <li>Docker, om Docker ska demonstreras</li>
+      </ul>
+      <p>Eleverna kan själva logga in, öppna VS Code, ansluta till GitHub, aktivera GitHub Copilot, klona sitt PRAO-repository och göra en teständring.</p>
+    </section>
+
+    <section>
+      <h2>Säkerhetsregler för eleverna</h2>
+      <p>Gå igenom reglerna på måndag och håll dem synliga under veckan.</p>
+      <ol>
+        <li>Lägg aldrig lösenord, nycklar eller tokens i koden.</li>
+        <li>Lägg aldrig riktiga personuppgifter i spelet eller README-filen.</li>
+        <li>Kopiera inte intern universitetskod eller intern information till Copilot.</li>
+        <li>Skriv inte information från interna system i frågor till Copilot.</li>
+        <li>Installera inte program eller tillägg utan att fråga handledaren.</li>
+        <li>Öppna endast system och repositoryn som handledaren har anvisat.</li>
+        <li>Acceptera inte kod från Copilot utan att först försöka förstå och testa den.</li>
+        <li>Fråga handledaren om något verkar oklart, känsligt eller osäkert.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schema – PRAO på ITS</title>
+  <link rel="stylesheet" href="mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./">PRAO på ITS</a>
+      <ul>
+        <li><a href="bakgrund.html">Bakgrund</a></li>
+        <li><a href="mal.html">Mål</a></li>
+        <li><a href="schema.html">Schema</a></li>
+        <li><a href="intervjuer.html">Intervjuer</a></li>
+        <li><a href="arbetssatt.html">Arbetssätt</a></li>
+        <li><a href="forberedelser.html">Förberedelser</a></li>
+        <li><a href="spel/">Spelet</a></li>
+      </ul>
+    </nav>
+    <h1>Schema</h1>
+    <p>Hoppa till <a href="#mandag">måndag</a>, <a href="#tisdag">tisdag</a>, <a href="#onsdag">onsdag</a>, <a href="#torsdag">torsdag</a> eller <a href="#fredag">fredag</a>.</p>
+  </header>
+  <main>
+    <section id="mandag">
+      <h2>Måndag: Upptäcka ITS och komma igång</h2>
+      <p><strong>Dagens mål:</strong> Eleverna ska känna sig välkomna, förstå veckans mål, möta sin första yrkesroll och få ett synligt tekniskt resultat.</p>
+      <table>
+        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td>09.00–09.30</td><td>Välkomnande, presentation, veckans mål och praktiska regler</td></tr>
+          <tr><td>09.30–10.00</td><td>Fika</td></tr>
+          <tr><td>10.00–10.30</td><td>Rundvandring på ITS</td></tr>
+          <tr><td>10.30–11.00</td><td>Informationssäkerhet, personuppgifter, lösenord och Copilot-regler</td></tr>
+          <tr><td>11.00–11.30</td><td>Kontrollera GitHub-konton, verifiera e-post och acceptera ITS-inbjudan</td></tr>
+          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
+          <tr><td>12.30–13.00</td><td>Intervju 1: systemutvecklare</td></tr>
+          <tr><td>13.00–13.30</td><td>Introduktion till VS Code, GitHub och projektets filer</td></tr>
+          <tr><td>13.30–14.30</td><td>Klona startprojektet och ändra exempelvis rubrik, färger och spelinstruktion</td></tr>
+          <tr><td>14.30–15.00</td><td>Fika</td></tr>
+          <tr><td>15.00–15.20</td><td>Göra en test-commit och push till GitHub</td></tr>
+          <tr><td>15.20–15.30</td><td>Loggbok och kort avstämning</td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>Kontrollpunkter och första testuppgift</summary>
+        <p>Eleverna ska kunna logga in på GitHub, läsa e-post från GitHub, acceptera ITS-inbjudan, hitta och klona rätt repository, öppna projektet i VS Code, logga in i GitHub Copilot, göra en enkel ändring samt skapa en commit och pusha den.</p>
+        <p>Första testuppgiften: lägg till förnamn eller smeknamn, tre saker ni vill lära er under veckan och ett förslag på hur spelet ska se ut i <code>README.md</code>. Undvik efternamn, skola, klass och privata kontaktuppgifter.</p>
+      </details>
+    </section>
+
+    <section id="tisdag">
+      <h2>Tisdag: Webbutveckling och frågor till Copilot</h2>
+      <p><strong>Dagens mål:</strong> Förstå grunderna i HTML, CSS och JavaScript samt börja forma spelets utseende.</p>
+      <table>
+        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td>09.00–09.30</td><td>Kort introduktion till HTML, CSS, JavaScript och webbläsaren</td></tr>
+          <tr><td>09.30–10.00</td><td>Fika</td></tr>
+          <tr><td>10.00–10.40</td><td>Copilot-övning: jämför vaga och tydliga frågor</td></tr>
+          <tr><td>10.40–11.10</td><td>Intervju 2: IT-support eller servicedesk</td></tr>
+          <tr><td>11.10–11.30</td><td>Sammanfatta intervjun och planera eftermiddagen</td></tr>
+          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
+          <tr><td>12.30–13.00</td><td>Rita spelets gränssnitt på papper eller whiteboard</td></tr>
+          <tr><td>13.00–14.00</td><td>Skapa eller ändra spelplan, rubrik, instruktioner och startknapp</td></tr>
+          <tr><td>14.00–14.30</td><td>Testa varandras lösning och göra en enkel commit</td></tr>
+          <tr><td>14.30–15.00</td><td>Fika</td></tr>
+          <tr><td>15.00–15.20</td><td>Förbättra sidan efter testningen</td></tr>
+          <tr><td>15.20–15.30</td><td>Loggbok och nästa steg</td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>Resultat efter tisdagen</summary>
+        <ul>
+          <li>Eleverna kan beskriva HTML, CSS och JavaScript med egna ord.</li>
+          <li>Spelet har en synlig spelplan och tydliga instruktioner.</li>
+          <li>Eleverna har tränat på att ställa tydliga frågor till Copilot.</li>
+          <li>Minst en ändring är sparad i GitHub.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="onsdag">
+      <h2>Onsdag: Göra spelet spelbart</h2>
+      <p><strong>Dagens mål:</strong> Skapa spelets viktigaste spelmekanik i små, testbara steg.</p>
+      <table>
+        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td>09.00–09.30</td><td>Planera spelregler, styrning, vinst och förlust</td></tr>
+          <tr><td>09.30–10.00</td><td>Fika</td></tr>
+          <tr><td>10.00–10.30</td><td>Intervju 3: drift-, nätverks- eller DevOps-tekniker</td></tr>
+          <tr><td>10.30–11.00</td><td>Sammanfatta intervjun och dela upp programmeringen i små uppgifter</td></tr>
+          <tr><td>11.00–11.30</td><td>Börja med tangentbordsstyrning eller annan enkel interaktion</td></tr>
+          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
+          <tr><td>12.30–13.15</td><td>Fortsätta med spelarens rörelse och testa gränser</td></tr>
+          <tr><td>13.15–13.25</td><td>Kort bensträckare och rollbyte</td></tr>
+          <tr><td>13.25–14.10</td><td>Lägga till boll, mål eller annat rörligt objekt</td></tr>
+          <tr><td>14.10–14.30</td><td>Gemensam testning och commit</td></tr>
+          <tr><td>14.30–15.00</td><td>Fika</td></tr>
+          <tr><td>15.00–15.20</td><td>Fixa ett av de fel som testningen avslöjade</td></tr>
+          <tr><td>15.20–15.30</td><td>Loggbok och avstämning</td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>Onsdagens uppgiftslista</summary>
+        <ul>
+          <li>Visa spelplanen.</li>
+          <li>Visa spelaren eller plattan.</li>
+          <li>Flytta spelaren med tangentbordet.</li>
+          <li>Hindra spelaren från att lämna spelplanen.</li>
+          <li>Visa ett mål, en boll eller ett hinder.</li>
+          <li>Skapa en enkel spelregel.</li>
+          <li>Testa efter varje liten ändring.</li>
+        </ul>
+        <p>Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara extra tillgänglig och hjälpa eleverna att minska uppgiften om de fastnar.</p>
+      </details>
+    </section>
+
+    <section id="torsdag">
+      <h2>Torsdag: Poäng, felsökning och förbättringar</h2>
+      <p><strong>Dagens mål:</strong> Göra spelet tydligt och komplett på en grundläggande nivå samt visa hur utvecklare felsöker.</p>
+      <table>
+        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td>09.00–09.30</td><td>Genomgång av buggar, felmeddelanden och enkel felsökning</td></tr>
+          <tr><td>09.30–10.00</td><td>Fika</td></tr>
+          <tr><td>10.00–10.30</td><td>Intervju 4: UX-designer, testare eller projektledare</td></tr>
+          <tr><td>10.30–11.00</td><td>Sammanfatta intervjun och göra en enkel testplan</td></tr>
+          <tr><td>11.00–11.30</td><td>Felsökningsövning med ett avsiktligt enkelt fel</td></tr>
+          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
+          <tr><td>12.30–13.15</td><td>Lägga till poäng, vinst, förlust eller starta om</td></tr>
+          <tr><td>13.15–13.25</td><td>Kort bensträckare och rollbyte</td></tr>
+          <tr><td>13.25–14.10</td><td>Förbättra färger, instruktioner och spelkänsla</td></tr>
+          <tr><td>14.10–14.30</td><td>Testa spelet och prioritera återstående fel</td></tr>
+          <tr><td>14.30–15.00</td><td>Fika</td></tr>
+          <tr><td>15.00–15.20</td><td>Kort handledardemonstration av Docker, frivillig provkörning</td></tr>
+          <tr><td>15.20–15.30</td><td>Commit, loggbok och plan för fredagen</td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>Docker på lämplig nivå</summary>
+        <p>Docker ska inte vara ett villkor för att eleverna ska lyckas. Handledaren kan förklara varför en container kan vara användbar, visa en enkel färdig <code>Dockerfile</code> och ett kommando som startar spelet, och låta eleverna prova om tid och intresse finns. Undvik att lägga mycket tid på containerkonfiguration, nätverksportar eller felsökning av Docker Desktop.</p>
+      </details>
+    </section>
+
+    <section id="fredag">
+      <h2>Fredag: Yrkesbild, presentation och avslutning</h2>
+      <p><strong>Dagens mål:</strong> Sammanfatta veckan, färdigställa ett stabilt resultat och visa vad eleverna har lärt sig.</p>
+      <table>
+        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
+        <tbody>
+          <tr><td>09.00–09.30</td><td>Veckoretro: vad är klart, vad återstår och vad är viktigast?</td></tr>
+          <tr><td>09.30–10.00</td><td>Fika</td></tr>
+          <tr><td>10.00–10.30</td><td>Intervju 5: IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare</td></tr>
+          <tr><td>10.30–11.00</td><td>Jämföra de fem yrkesrollerna</td></tr>
+          <tr><td>11.00–11.30</td><td>Sluttest och val av högst två små förbättringar</td></tr>
+          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
+          <tr><td>12.30–13.15</td><td>Rätta viktiga fel och städa projektet</td></tr>
+          <tr><td>13.15–13.45</td><td>Skriva klart README och instruktioner</td></tr>
+          <tr><td>13.45–14.30</td><td>Förbereda och öva presentationen</td></tr>
+          <tr><td>14.30–15.00</td><td>Fika</td></tr>
+          <tr><td>15.00–15.20</td><td>Presentation och spelvisning för handledare och några kollegor</td></tr>
+          <tr><td>15.20–15.30</td><td>Återkoppling, avslutning och tack</td></tr>
+        </tbody>
+      </table>
+      <p>Undvik att lägga till stora nya funktioner under fredagen. Ett enkelt spel som fungerar är bättre än ett avancerat spel som inte går att demonstrera.</p>
+    </section>
+  </main>
+</body>
+</html>
