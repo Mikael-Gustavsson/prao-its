@@ -11,4 +11,6 @@ Material och en publicerad webbplats för en PRAO-vecka på ITS för elever i å
 
 ## Arbetssätt
 
-Ändra filerna, gör commit och push. Webbplatsen uppdateras automatiskt så att resultatet snabbt syns i webbläsaren.
+Den inre testloopen är att öppna hemsidan direkt från disk, till exempel genom att öppna `site/index.html` i webbläsaren. Alla sökvägar är relativa, så inga externa eller publicerade adresser behövs. Ändra, ladda om sidan och testa.
+
+När du är nöjd lokalt gör du commit och push. Webbplatsen publiceras då automatiskt via GitHub Pages.

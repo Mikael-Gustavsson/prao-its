@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>JavaScript</h1>
+    <p>Sidans beteende: det som händer när någon använder sidan.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Ett program är instruktioner</h2>
+      <p>JavaScript är ett programmeringsspråk. Ett program är en lista instruktioner som datorn gör uppifrån och ned, en i taget.</p>
+      <pre><code>console.log("Hej!");
+console.log("Spelet startar");</code></pre>
+      <p>Datorn skriver först "Hej!" och sedan "Spelet startar". Texten hamnar i webbläsarens konsol, se <a href="felsokning.html">felsökning</a>.</p>
+    </section>
+    <section>
+      <h2>Ändra sidan</h2>
+      <p>JavaScript kan hitta ett element via dess <code>id</code> och ändra det:</p>
+      <pre><code>const rubrik = document.getElementById("rubrik");
+rubrik.textContent = "Du vann!";</code></pre>
+      <p>Första raden hittar elementet med <code>id="rubrik"</code>. Andra raden byter dess text.</p>
+    </section>
+    <section>
+      <h2>Regler att minnas</h2>
+      <ul>
+        <li>Varje instruktion slutar normalt med <code>;</code>.</li>
+        <li>Text skrivs inom citattecken: <code>"så här"</code>.</li>
+        <li>Stora och små bokstäver spelar roll: <code>Rubrik</code> är inte <code>rubrik</code>.</li>
+        <li>Rader som börjar med <code>//</code> är kommentarer. Datorn hoppar över dem.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Koppla till HTML</h2>
+      <pre><code>&lt;script src="spel.js"&gt;&lt;/script&gt;</code></pre>
+      <p>Raden ligger nära slutet av <code>body</code>, så att sidans element finns när skriptet körs.</p>
+    </section>
+    <section>
+      <h2>Läs vidare</h2>
+      <p><a href="variabler.html">Variabler</a>, <a href="villkor.html">villkor</a>, <a href="loopar.html">loopar</a> och <a href="funktioner.html">funktioner</a>.</p>
+    </section>
+  </main>
+</body>
+</html>

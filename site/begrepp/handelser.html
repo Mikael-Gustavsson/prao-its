@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Händelser och tangentbord – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Händelser och tangentbord</h1>
+    <p>Att låta programmet reagera på det spelaren gör.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Händelse</h2>
+      <p>En händelse är något som inträffar: ett klick, en tangent som trycks ned, att sidan laddats klart. Programmet kan <strong>lyssna</strong> efter en händelse och köra en <a href="funktioner.html">funktion</a> när den inträffar.</p>
+    </section>
+    <section>
+      <h2>Klick på knapp</h2>
+      <pre><code>const knapp = document.getElementById("start");
+
+knapp.addEventListener("click", function () {
+  console.log("Spelet startar!");
+});</code></pre>
+      <p>Läs det som: <em>när någon klickar på knappen, kör den här funktionen</em>.</p>
+    </section>
+    <section>
+      <h2>Tangenter</h2>
+      <pre><code>document.addEventListener("keydown", function (handelse) {
+  if (handelse.key === "ArrowLeft") {
+    spelarX = spelarX - 10;
+  }
+  if (handelse.key === "ArrowRight") {
+    spelarX = spelarX + 10;
+  }
+});</code></pre>
+      <ul>
+        <li><code>keydown</code> – en tangent trycks ned.</li>
+        <li><code>handelse.key</code> – vilken tangent: <code>"ArrowLeft"</code>, <code>"ArrowRight"</code>, <code>" "</code> (mellanslag).</li>
+      </ul>
+      <p>Koden ändrar bara variabeln <code>spelarX</code>. Själva ritningen sker i <a href="canvas.html">spelloopen</a>.</p>
+    </section>
+    <section>
+      <h2>Prova själv</h2>
+      <p>Skriv ut tangentens namn med <code>console.log(handelse.key)</code> och tryck på olika tangenter. Se <a href="felsokning.html">felsökning</a> för hur du öppnar konsolen.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loopar – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Loopar</h1>
+    <p>Att upprepa samma sak flera gånger utan att skriva den flera gånger.</p>
+  </header>
+  <main>
+    <section>
+      <h2>for-loop</h2>
+      <pre><code>for (let i = 0; i &lt; 5; i++) {
+  console.log("Block nummer " + i);
+}</code></pre>
+      <p>Koden mellan <code>{</code> och <code>}</code> körs fem gånger, med <code>i</code> som 0, 1, 2, 3 och 4.</p>
+      <ul>
+        <li><code>let i = 0</code> – börja på 0.</li>
+        <li><code>i &lt; 5</code> – fortsätt så länge detta är sant.</li>
+        <li><code>i++</code> – öka <code>i</code> med 1 efter varje varv.</li>
+      </ul>
+      <p>Datorer börjar ofta räkna på 0, inte 1.</p>
+    </section>
+    <section>
+      <h2>Lista</h2>
+      <p>En lista innehåller flera värden i ordning:</p>
+      <pre><code>const block = ["rött", "grönt", "blått"];
+for (const farg of block) {
+  console.log(farg);
+}</code></pre>
+      <p>Loopen tar ett värde i taget ur listan.</p>
+    </section>
+    <section>
+      <h2>Se upp</h2>
+      <p>Om villkoret aldrig blir falskt fortsätter loopen för alltid och webbläsaren hänger sig. Stäng fliken och kontrollera villkoret och räknaren.</p>
+    </section>
+    <section>
+      <h2>I spelet</h2>
+      <p>Loopar används för att skapa många block, en rad i taget, och för att gå igenom alla block och kontrollera om bollen träffat något.</p>
+    </section>
+  </main>
+</body>
+</html>

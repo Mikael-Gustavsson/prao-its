@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felsökning – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Felsökning</h1>
+    <p>Fel är normalt. Alla som programmerar letar fel hela tiden.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bugg</h2>
+      <p>Ett fel i ett program kallas <strong>bugg</strong>. Att hitta och rätta det kallas <strong>felsökning</strong>. Det är en stor del av ett programmerararbete.</p>
+    </section>
+    <section>
+      <h2>Konsolen</h2>
+      <p>Webbläsaren har en konsol där fel och utskrifter syns.</p>
+      <ol>
+        <li>Öppna sidan i webbläsaren.</li>
+        <li>Tryck <kbd>F12</kbd>.</li>
+        <li>Välj fliken <em>Console</em>.</li>
+      </ol>
+      <p>Röda rader är felmeddelanden. De säger ofta vilken fil och vilken rad som är problemet, till exempel <code>spel.js:12</code>.</p>
+    </section>
+    <section>
+      <h2>Skriv ut för att se</h2>
+      <pre><code>console.log("spelarX är", spelarX);</code></pre>
+      <p>Med <code>console.log</code> ser du vad en <a href="variabler.html">variabel</a> innehåller vid ett visst tillfälle.</p>
+    </section>
+    <section>
+      <h2>Vanliga orsaker</h2>
+      <ul>
+        <li>Stavfel i ett namn eller fel stor/liten bokstav.</li>
+        <li>Saknad parentes <code>)</code>, klammer <code>}</code> eller citattecken.</li>
+        <li>Fel <a href="filer.html">sökväg</a> så filen inte hittas.</li>
+        <li>Skriptet har inte sparats eller sidan inte laddats om.</li>
+        <li><code>=</code> där det skulle vara <code>===</code>.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Metod</h2>
+      <ol>
+        <li>Beskriv vad du ville ska hända.</li>
+        <li>Beskriv vad som faktiskt händer.</li>
+        <li>Läs felmeddelandet i konsolen.</li>
+        <li>Ändra <strong>en</strong> sak åt gången och testa.</li>
+        <li>Ställ en tydlig fråga till <a href="copilot.html">Copilot</a> eller handledaren.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Villkor – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Villkor</h1>
+    <p>Att låta programmet välja väg: om något är sant, gör något.</p>
+  </header>
+  <main>
+    <section>
+      <h2>if</h2>
+      <pre><code>if (poang &gt;= 100) {
+  console.log("Du vann!");
+}</code></pre>
+      <p>Läs det som: <em>om poängen är minst 100, skriv "Du vann!"</em>. Koden mellan <code>{</code> och <code>}</code> körs bara om villkoret i parentesen är sant.</p>
+    </section>
+    <section>
+      <h2>else</h2>
+      <pre><code>if (liv &gt; 0) {
+  console.log("Fortsätt spela");
+} else {
+  console.log("Game over");
+}</code></pre>
+      <p><code>else</code> betyder "annars" och körs när villkoret inte är sant.</p>
+    </section>
+    <section>
+      <h2>Jämförelser</h2>
+      <ul>
+        <li><code>a &gt; b</code> – a är större än b.</li>
+        <li><code>a &lt; b</code> – a är mindre än b.</li>
+        <li><code>a &gt;= b</code>, <code>a &lt;= b</code> – större eller lika, mindre eller lika.</li>
+        <li><code>a === b</code> – a är lika med b. Observera tre likhetstecken.</li>
+        <li><code>a !== b</code> – a är inte lika med b.</li>
+      </ul>
+      <p>Ett enda <code>=</code> betyder något annat: att lägga ett värde i en <a href="variabler.html">variabel</a>.</p>
+    </section>
+    <section>
+      <h2>Och, eller</h2>
+      <pre><code>if (spelarX &lt; 0 || spelarX &gt; 640) {
+  // spelaren har lämnat spelplanen
+}</code></pre>
+      <ul>
+        <li><code>||</code> – eller.</li>
+        <li><code>&amp;&amp;</code> – och.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>I spelet</h2>
+      <p>Villkor avgör om spelaren stannar vid kanten, om bollen träffar plattan och om spelet är vunnet eller förlorat.</p>
+    </section>
+  </main>
+</body>
+</html>

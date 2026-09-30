@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funktioner – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Funktioner</h1>
+    <p>Ett namngivet recept som du kan använda om och om igen.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Skapa och anropa</h2>
+      <pre><code>function visaPoang() {
+  console.log("Poäng: " + poang);
+}
+
+visaPoang();
+visaPoang();</code></pre>
+      <p>Först <strong>definieras</strong> funktionen: datorn lär sig receptet men kör det inte. Sedan <strong>anropas</strong> den med <code>visaPoang();</code>. Varje anrop kör receptet.</p>
+    </section>
+    <section>
+      <h2>Indata</h2>
+      <p>En funktion kan ta emot värden i parenteserna. De kallas <strong>parametrar</strong>:</p>
+      <pre><code>function laggTillPoang(antal) {
+  poang = poang + antal;
+}
+
+laggTillPoang(10);
+laggTillPoang(50);</code></pre>
+    </section>
+    <section>
+      <h2>Svar</h2>
+      <p>En funktion kan lämna tillbaka ett värde med <code>return</code>:</p>
+      <pre><code>function arSlut() {
+  return liv === 0;
+}
+
+if (arSlut()) {
+  console.log("Game over");
+}</code></pre>
+    </section>
+    <section>
+      <h2>Varför?</h2>
+      <ul>
+        <li>Du skriver koden en gång och använder den många gånger.</li>
+        <li>Stora problem delas upp i små bitar med tydliga namn.</li>
+        <li>Fel är lättare att hitta, eftersom varje bit går att testa för sig.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>I spelet</h2>
+      <p>Typiska funktioner: <code>ritaSpelare()</code>, <code>flyttaBoll()</code>, <code>startaOm()</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

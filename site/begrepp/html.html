@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>HTML</h1>
+    <p>Sidans innehåll: rubriker, text, knappar och bilder.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Taggar</h2>
+      <p>HTML består av <strong>taggar</strong> som omsluter innehåll. En tagg har en start och ett slut:</p>
+      <pre><code>&lt;h1&gt;Mitt spel&lt;/h1&gt;
+&lt;p&gt;Använd piltangenterna.&lt;/p&gt;
+&lt;button&gt;Starta&lt;/button&gt;</code></pre>
+      <p>Webbläsaren visar en stor rubrik, en textrad och en knapp. Slut-taggen har ett snedstreck.</p>
+    </section>
+    <section>
+      <h2>Attribut</h2>
+      <p>Attribut ger en tagg extra information. De skrivs i start-taggen:</p>
+      <pre><code>&lt;button id="start"&gt;Starta&lt;/button&gt;</code></pre>
+      <p><code>id</code> är ett namn. Med det kan JavaScript och CSS hitta just den knappen.</p>
+    </section>
+    <section>
+      <h2>Tagg inuti tagg</h2>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Poäng&lt;/li&gt;
+  &lt;li&gt;Liv&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p>Här ligger <code>li</code> inuti <code>ul</code>. Indrag hjälper dig att se vad som ligger i vad.</p>
+    </section>
+    <section>
+      <h2>Ett helt dokument</h2>
+      <pre><code>&lt;!doctype html&gt;
+&lt;html lang="sv"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Vårt spel&lt;/title&gt;
+  &lt;link rel="stylesheet" href="spel.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Vårt spel&lt;/h1&gt;
+  &lt;script src="spel.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <ul>
+        <li><code>head</code> – information om sidan, syns inte.</li>
+        <li><code>body</code> – det som syns.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Prova själv</h2>
+      <p>Ändra texten i en <code>h1</code> i <code>spel/index.html</code>, spara och ladda om sidan i webbläsaren.</p>
+    </section>
+  </main>
+</body>
+</html>

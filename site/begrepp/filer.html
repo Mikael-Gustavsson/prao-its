@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filer, mappar och sökvägar – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Filer, mappar och sökvägar</h1>
+    <p>Hur filerna i ett projekt hänger ihop.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Projekt är mappar</h2>
+      <p>Ett projekt är en mapp med filer. I spelet finns till exempel:</p>
+      <pre><code>spel/
+  index.html
+  spel.css
+  spel.js</code></pre>
+      <p>Filändelsen visar vad filen innehåller: <code>.html</code>, <code>.css</code> och <code>.js</code>.</p>
+    </section>
+    <section>
+      <h2>Sökväg</h2>
+      <p>En sökväg beskriver var en fil finns. HTML-filen använder sökvägar för att hitta stilmall och skript:</p>
+      <pre><code>&lt;link rel="stylesheet" href="spel.css"&gt;
+&lt;script src="spel.js"&gt;&lt;/script&gt;</code></pre>
+      <p><code>spel.css</code> betyder: filen ligger i samma mapp som den här filen. Det kallas <strong>relativ sökväg</strong>.</p>
+      <ul>
+        <li><code>spel.css</code> – samma mapp.</li>
+        <li><code>../mvp.css</code> – en mapp upp, sedan filen.</li>
+        <li><code>bilder/boll.png</code> – in i undermappen <code>bilder</code>.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Varför relativa sökvägar?</h2>
+      <p>Då fungerar sidan direkt från disken och även när den är publicerad. Skriv inte <code>C:\Users\...</code> eller hela internetadresser för dina egna filer.</p>
+    </section>
+    <section>
+      <h2>Vanligt fel</h2>
+      <p>Sidan saknar utseende eller spelet rör sig inte? Kontrollera stavning och stora/små bokstäver i filnamnet. <code>Spel.js</code> och <code>spel.js</code> är inte samma fil på alla datorer.</p>
+    </section>
+  </main>
+</body>
+</html>

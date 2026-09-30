@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>CSS</h1>
+    <p>Sidans utseende: färger, storlekar och placering.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Regel</h2>
+      <p>CSS består av regler. En regel säger vilket element den gäller och hur det ska se ut:</p>
+      <pre><code>h1 {
+  color: darkblue;
+  font-size: 32px;
+}</code></pre>
+      <ul>
+        <li><code>h1</code> – <strong>väljaren</strong>: alla stora rubriker.</li>
+        <li><code>color</code> – <strong>egenskapen</strong>: vad som ändras.</li>
+        <li><code>darkblue</code> – <strong>värdet</strong>: till vad.</li>
+      </ul>
+      <p>Varje rad slutar med semikolon.</p>
+    </section>
+    <section>
+      <h2>Välja med id</h2>
+      <p>Om HTML har <code>&lt;button id="start"&gt;</code> väljer du den med ett hashtecken:</p>
+      <pre><code>#start {
+  background: green;
+  color: white;
+}</code></pre>
+    </section>
+    <section>
+      <h2>Vanliga egenskaper</h2>
+      <ul>
+        <li><code>color</code> – textfärg.</li>
+        <li><code>background</code> – bakgrundsfärg.</li>
+        <li><code>font-size</code> – textstorlek.</li>
+        <li><code>width</code>, <code>height</code> – bredd och höjd.</li>
+        <li><code>margin</code>, <code>padding</code> – luft utanför och innanför.</li>
+        <li><code>border</code> – ram.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Koppla till HTML</h2>
+      <pre><code>&lt;link rel="stylesheet" href="spel.css"&gt;</code></pre>
+      <p>Raden ligger i <code>head</code> och pekar ut CSS-filen. Se <a href="filer.html">sökvägar</a>.</p>
+    </section>
+    <section>
+      <h2>Prova själv</h2>
+      <p>Ändra en färg i <code>spel/spel.css</code>, spara och ladda om sidan.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variabler – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Variabler</h1>
+    <p>Platser med namn där programmet sparar värden.</p>
+  </header>
+  <main>
+    <section>
+      <h2>En låda med namn</h2>
+      <p>En variabel är som en låda med en etikett. I lådan ligger ett värde, till exempel poängen i spelet.</p>
+      <pre><code>let poang = 0;
+poang = poang + 10;</code></pre>
+      <p>Första raden skapar lådan <code>poang</code> och lägger in 0. Andra raden tar det som ligger där, adderar 10 och lägger tillbaka: nu är poängen 10.</p>
+    </section>
+    <section>
+      <h2>let och const</h2>
+      <ul>
+        <li><code>let</code> – värdet kan ändras senare (poäng, position).</li>
+        <li><code>const</code> – värdet ändras aldrig (spelplanens bredd).</li>
+      </ul>
+      <pre><code>const bredd = 640;
+let spelarX = 300;</code></pre>
+    </section>
+    <section>
+      <h2>Typer av värden</h2>
+      <ul>
+        <li><strong>Tal:</strong> <code>10</code>, <code>3.5</code></li>
+        <li><strong>Text:</strong> <code>"Du vann"</code></li>
+        <li><strong>Sant eller falskt:</strong> <code>true</code>, <code>false</code></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Bra namn</h2>
+      <p>Välj namn som beskriver innehållet: <code>poang</code>, <code>spelarX</code>, <code>bollHastighet</code>. Undvik <code>x1</code> och <code>abc</code>. Namn får inte ha mellanslag. Skriv nästa ord med stor bokstav.</p>
+    </section>
+    <section>
+      <h2>I spelet</h2>
+      <p>Saker som ändras under spelet sparas i variabler: var spelaren är, hur många poäng man har och om spelet är slut.</p>
+    </section>
+  </main>
+</body>
+</html>

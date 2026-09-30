@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canvas och spelloop – PRAO på ITS</title>
+  <link rel="stylesheet" href="../mvp.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../">PRAO på ITS</a>
+    </nav>
+    <h1>Canvas och spelloop</h1>
+    <p>Hur man ritar i webbläsaren och får saker att röra sig.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Canvas</h2>
+      <p>Canvas är en tom rityta i HTML. JavaScript ritar på den med kommandon.</p>
+      <pre><code>&lt;canvas id="spelplan" width="640" height="360"&gt;&lt;/canvas&gt;</code></pre>
+      <pre><code>const canvas = document.getElementById("spelplan");
+const penna = canvas.getContext("2d");
+
+penna.fillStyle = "blue";
+penna.fillRect(20, 30, 100, 15);</code></pre>
+      <p><code>fillRect(x, y, bredd, höjd)</code> ritar en fylld rektangel.</p>
+    </section>
+    <section>
+      <h2>Koordinater</h2>
+      <p>Punkten (0, 0) är <strong>övre vänstra hörnet</strong>. <code>x</code> ökar åt höger och <code>y</code> ökar <strong>nedåt</strong>. Det är tvärtom mot matematiken i skolan.</p>
+    </section>
+    <section>
+      <h2>Animation: spelloopen</h2>
+      <p>Film är många stillbilder efter varandra. Ett spel fungerar likadant. Många gånger per sekund gör programmet detta:</p>
+      <ol>
+        <li><strong>Sudda</strong> hela ytan.</li>
+        <li><strong>Uppdatera</strong> <a href="variabler.html">variablerna</a> (flytta bollen, kolla träffar).</li>
+        <li><strong>Rita</strong> allt på nytt.</li>
+      </ol>
+      <pre><code>let bollX = 50;
+
+function spelloop() {
+  penna.clearRect(0, 0, 640, 360);
+
+  bollX = bollX + 2;
+
+  penna.fillStyle = "red";
+  penna.fillRect(bollX, 100, 10, 10);
+
+  requestAnimationFrame(spelloop);
+}
+
+spelloop();</code></pre>
+      <p><code>requestAnimationFrame(spelloop)</code> ber webbläsaren köra funktionen igen inför nästa bild.</p>
+    </section>
+    <section>
+      <h2>Kollision</h2>
+      <p>Att bollen "träffar" något är bara ett <a href="villkor.html">villkor</a>: är bollens x och y inom rektangelns område?</p>
+    </section>
+    <section>
+      <h2>Tips</h2>
+      <p>Låt <a href="handelser.html">tangenthändelserna</a> bara ändra variabler. Låt spelloopen göra all ritning.</p>
+    </section>
+  </main>
+</body>
+</html>

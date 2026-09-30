@@ -830,3 +830,19 @@ footer {
   color: var(--color-text-secondary);
   text-align: center;
 }
+
+/* Rullgardinsmeny i navigeringen */
+nav ul li ul {
+  background: var(--umu-blue);
+  border-color: var(--umu-blue);
+  flex-direction: column;
+  gap: 0;
+}
+
+nav ul li:focus-within ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  display: block;
+}
