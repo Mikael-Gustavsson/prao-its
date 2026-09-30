@@ -129,6 +129,8 @@ Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-adm
 
 ## Rekommenderad datorförberedelse
 
+Handledaren förbereder en dator för eleven genom att installera operativsystem och program som eleven kommer att behöva använda under veckan. Eleven behöver inga universitetskonton under veckan. Däremot behöver eleven ett tillfälligt GitHub-konto för att kunna redigera informationen och använda de AI-verktyg som behövs. När veckan är slut kan kontot avslutas om eleven så önskar.
+
 Eleven får gärna uppleva hur en utvecklingsmiljö sätts upp, men veckan ska inte vara beroende av långa installationer. Följande bör därför vara installerat eller åtminstone testat i förväg:
 
 - VS Code
