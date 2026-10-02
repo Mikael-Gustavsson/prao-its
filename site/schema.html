@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Schema – PRAO på ITS</title>
   <link rel="stylesheet" href="mvp.css">
+  <style>
+    .paus { margin: 0.4rem 0; padding: 0 1rem; opacity: 0.65; }
+  </style>
 </head>
 <body>
   <header>
@@ -12,7 +15,7 @@
       <a href="./">PRAO på ITS</a>
     </nav>
     <h1>Schema</h1>
-    <p>Hoppa till <a href="#mandag">måndag</a>, <a href="#tisdag">tisdag</a>, <a href="#onsdag">onsdag</a>, <a href="#torsdag">torsdag</a> eller <a href="#fredag">fredag</a>.</p>
+    <p>Hoppa till <a href="#mandag">måndag</a>, <a href="#tisdag">tisdag</a>, <a href="#onsdag">onsdag</a>, <a href="#torsdag">torsdag</a> eller <a href="#fredag">fredag</a>. Klicka på en aktivitet för att se instruktionerna.</p>
   </header>
   <main>
     <section id="mandag">
@@ -22,27 +25,194 @@
           <p><strong>Dagens mål:</strong> Eleven ska känna sig välkommen, förstå veckans mål, möta sin första yrkesroll och få ett synligt tekniskt resultat.</p>
         </aside>
       </article>
-      <table>
-        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
-        <tbody>
-          <tr><td>09.00–09.30</td><td>Välkomnande, presentation, veckans mål och praktiska regler</td></tr>
-          <tr><td>09.30–10.00</td><td>Fika</td></tr>
-          <tr><td>10.00–10.30</td><td>Rundvandring på ITS</td></tr>
-          <tr><td>10.30–11.00</td><td>Informationssäkerhet, personuppgifter, lösenord och Copilot-regler</td></tr>
-          <tr><td>11.00–11.30</td><td>Kontrollera GitHub-konton, verifiera e-post och acceptera ITS-inbjudan</td></tr>
-          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
-          <tr><td>12.30–13.00</td><td>Intervju 1: systemutvecklare (fråga om tillstånd att spela in, spela in, transkribera efteråt)</td></tr>
-          <tr><td>13.00–13.30</td><td>Introduktion till VS Code, GitHub och projektets filer</td></tr>
-          <tr><td>13.30–14.30</td><td>Klona startprojektet och ändra exempelvis rubrik, färger och spelinstruktion</td></tr>
-          <tr><td>14.30–15.00</td><td>Fika</td></tr>
-          <tr><td>15.00–15.20</td><td>Göra en test-commit och push till GitHub</td></tr>
-          <tr><td>15.20–15.30</td><td>Loggbok och kort avstämning</td></tr>
-        </tbody>
-      </table>
+      <details>
+        <summary><strong>09.00–09.30</strong> Välkomnande, presentation, veckans mål och praktiska regler</summary>
+        <p><strong>Mål:</strong> Du vet vad veckan handlar om och vilka regler som gäller.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Lyssna på handledarens presentation av veckan.</li>
+          <li>Läs <a href="mal.html">Mål för veckan</a> och titta igenom hela schemat på den här sidan.</li>
+          <li>Berätta kort vad du är nyfiken på och vad du hoppas lära dig.</li>
+          <li>Ställ frågor om det som är oklart.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du kan med egna ord säga vad du ska göra under veckan: intervjua fem personer och bygga ett spel.</li>
+          <li>Du vet var schemat finns.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>09.30–10.00</strong> Fika</p>
+      <p class="paus"><strong>10.00–10.30</strong> Rundvandring på ITS</p>
+      <details>
+        <summary><strong>10.30–11.00</strong> Informationssäkerhet, personuppgifter, lösenord och Copilot-regler</summary>
+        <p><strong>Mål:</strong> Du vet vad du aldrig delar, och varför det är extra viktigt när spelet publiceras öppet på internet.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Gå igenom <a href="forberedelser.html">säkerhetsreglerna</a> tillsammans med handledaren.</li>
+          <li>Ge ett eget exempel på varje regel: något som är okej och något som inte är det.</li>
+          <li>Tala om vad som händer med en fil som du pushar till GitHub när repot är publikt. Vem kan se den, och kan du ta tillbaka den?</li>
+          <li>Gå igenom vad du inte får skriva in i agenten: lösenord, personuppgifter och intern information.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du kan förklara varför ditt repo är publikt och vad som aldrig får hamna där.</li>
+          <li>Du vet vad du gör om du är osäker: du frågar handledaren innan du gör något.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du är osäker på om något är känsligt: fråga handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>11.00–11.30</strong> Kontrollera GitHub-konton, verifiera e-post och acceptera ITS-inbjudan</summary>
+        <p><strong>Mål:</strong> Du har ett fungerande GitHub-konto som är anslutet till ITS GitHub Enterprise-konto, och Copilot är aktivt.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Gå till github.com och skapa ett konto med en e-postadress som du kan läsa under veckan.</li>
+          <li>Välj ett neutralt användarnamn. Använd inte fullständigt namn, skola eller klass, eftersom din sida blir publik.</li>
+          <li>Välj ett lösenord som du inte har använt någon annanstans. Sätt upp tvåfaktorsautentisering om handledaren säger det.</li>
+          <li>Öppna mejlet från GitHub och verifiera din e-postadress.</li>
+          <li>Ansök om att ansluta kontot till ITS GitHub Enterprise-konto. Följ handledarens anvisning.</li>
+          <li>Kontrollera med handledaren att ansökan är godkänd och att Copilot är aktivt på ditt konto.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du kan logga in på GitHub.</li>
+          <li>E-postadressen är verifierad.</li>
+          <li>Ansökan är godkänd.</li>
+          <li>Copilot är aktivt på kontot.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Mejlet kommer inte: titta i skräpposten och vänta några minuter. Be annars handledaren om hjälp.</li>
+          <li>Ansökan är inte godkänd än: säg det till handledaren direkt.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>11.30–12.30</strong> Lunch</p>
+      <details>
+        <summary><strong>12.30–13.00</strong> Introduktion till VS Code och kloning av startprojektet</summary>
+        <p><strong>Mål:</strong> Du har din egen kopia (fork) av projektet på GitHub, öppnad i VS Code, och du vet vad som finns i projektets filer.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna VS Code och titta på fönstret: filer till vänster, texten i mitten, Source Control för Git.</li>
+          <li>Gå till projektets repo på GitHub och klicka <strong>Fork</strong>. Du får en egen kopia på ditt konto.</li>
+          <li>I din fork: öppna fliken <strong>Actions</strong> och klicka på knappen som aktiverar workflows.</li>
+          <li>Gå till <strong>Settings → Pages</strong> och välj <strong>GitHub Actions</strong> som källa.</li>
+          <li>Klona din fork i VS Code, med handledarens hjälp.</li>
+          <li>Logga in på GitHub och Copilot i VS Code.</li>
+          <li>Öppna <code>site/spel/index.html</code> i webbläsaren. Titta på filerna <code>index.html</code>, <code>spel.css</code> och <code>spel.js</code>.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Din fork finns på ditt GitHub-konto.</li>
+          <li>Projektet är öppet i VS Code.</li>
+          <li>Copilot-chatten svarar.</li>
+          <li>Du ser <code>site/spel/index.html</code> i webbläsaren.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du hittar inte Fork-knappen: kontrollera att du är inloggad.</li>
+          <li>Du ser inte fliken Actions: kontrollera att du står i din egen fork.</li>
+          <li>Läs <a href="begrepp/filer.html">Filer, mappar och sökvägar</a> och <a href="begrepp/git.html">Git och GitHub</a>.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>13.00–13.30</strong> Planera intervju 1 med agenten</summary>
+        <p><strong>Mål:</strong> Du har ett eget upplägg för intervju 1 med en systemutvecklare.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="intervjuer.html">Intervjuer</a>. Där finns process, etik och en frågebank som exempel. Du väljer själv vad du använder.</li>
+          <li>Öppna agenten (Copilot) i VS Code. Berätta vem du är, vem du ska intervjua och vad du är nyfiken på. Be agenten ställa frågor till dig, en i taget, så att den förstår vad du vill få ut av intervjun.</li>
+          <li>Be agenten föreslå ett upplägg: tema, 5–7 frågor och följdfrågor. Tänk på att en systemutvecklare gör mycket mer än att skriva kod. Fråga om arbetsdagen, verktygen och samarbetet.</li>
+          <li>Ändra upplägget så att det blir ditt. Stryk frågor som du inte förstår eller inte tycker är intressanta.</li>
+          <li>Skriv ner det färdiga upplägget på papper. Skriv inte in namnet på den du ska intervjua i repot.</li>
+          <li>Öva hur du ber om tillstånd att spela in.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har 5–7 frågor som du förstår och kan ändra.</li>
+          <li>Du vet hur du ber om tillstånd att spela in.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Frågorna blir för allmänna: berätta för agenten vad du verkligen undrar över.</li>
+          <li>Du vet inte vad du är nyfiken på: välj en fråga ur frågebanken och bygg vidare.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>13.30–14.00</strong> Intervju 1: systemutvecklare (fråga om tillstånd att spela in, spela in, lämna ljudfilen till handledaren)</summary>
+        <p><strong>Mål:</strong> Du genomför en intervju på 20–30 minuter med en systemutvecklare och får en inblick i yrkesrollen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Hälsa och berätta kort vad intervjun är till för.</li>
+          <li>Fråga om det är okej att spela in och förklara varför: veckan är en övning i att arbeta med AI, och inspelningen gör att du kan lyssna i stället för att anteckna allt.</li>
+          <li>Säger personen <strong>ja</strong>: starta inspelningen med det verktyg handledaren har anvisat. Säger personen <strong>nej</strong>: gör intervjun med anteckningar.</li>
+          <li>Ställ dina frågor ur din plan. Lyssna, och ställ följdfrågor, till exempel <em>kan du ge ett exempel?</em></li>
+          <li>Tacka personen. Lämna ljudfilen till handledaren. Lägg den aldrig på GitHub.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Intervjun är genomförd.</li>
+          <li>Ljudfilen är lämnad till handledaren, eller så har du anteckningar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Personen svarar kort: be om ett exempel.</li>
+          <li>Du tappar tråden: titta på din frågelista.</li>
+          <li>Personen ångrar sig om inspelningen: säg att det är helt okej och berätta för handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>14.00–14.30</strong> Ändra rubrik, färger och spelinstruktion</summary>
+        <p><strong>Mål:</strong> Du har ändrat något i spelsidan och sett resultatet i webbläsaren.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/index.html</code> i VS Code.</li>
+          <li>Ändra rubriken <em>Vårt spel</em> till ett eget namn.</li>
+          <li>Öppna <code>spel.css</code> och ändra en färg.</li>
+          <li>Ändra spelinstruktionen i <code>index.html</code> så att den passar ditt spel, även om spelet inte finns än.</li>
+          <li>Spara filerna och ladda om sidan i webbläsaren.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du ser alla dina tre ändringar i webbläsaren.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Inget har ändrats: har du sparat filen? Tryck F5 i webbläsaren.</li>
+          <li>Se <a href="begrepp/html.html">HTML</a> och <a href="begrepp/css.html">CSS</a>.</li>
+          <li>Be agenten förklara en rad som du inte förstår.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>14.30–15.00</strong> Fika</p>
+      <details>
+        <summary><strong>15.00–15.20</strong> Göra en test-commit och push till GitHub, och AI-sammanfatta intervju 1</summary>
+        <p><strong>Mål:</strong> Du har sparat en ändring i GitHub, sett den publiceras på din sida och sammanfattat intervju 1.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Skapa filen <code>site/spel/README.md</code>. Skriv ett smeknamn (inte ditt riktiga namn), tre saker du vill lära dig och ett förslag på hur spelet ska se ut. Skriv inte efternamn, skola, klass eller kontaktuppgifter. Sidan är publik.</li>
+          <li>Gör en commit i Source Control med ett kort meddelande, till exempel <em>Lägg till README</em>, och push.</li>
+          <li>Titta på fliken <strong>Actions</strong> på GitHub tills körningen är grön. Öppna sedan din sida: <code>https://ANVÄNDARNAMN.github.io/prao-its/</code>, där ANVÄNDARNAMN är ditt användarnamn.</li>
+          <li>Få transkriptionen av intervju 1 av handledaren. Be agenten sammanfatta den och kontrollera att sammanfattningen stämmer.</li>
+          <li>Skriv fem punkter: en sak personen gör, ett verktyg, något roligt, något svårt och en ny fråga.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Din ändring finns på GitHub.</li>
+          <li>Din sida visar ändringen.</li>
+          <li>Du har en kontrollerad sammanfattning av intervju 1.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Tiden är kort: gör commit och push först, och sammanfattningen därefter.</li>
+          <li>Körningen i Actions blir röd: öppna den, läs felmeddelandet och berätta för handledaren.</li>
+          <li>Sidan visar inget: kontrollera att Pages har <em>GitHub Actions</em> som källa.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>15.20–15.30</strong> Loggbok och kort avstämning</p>
       <details>
         <summary>Kontrollpunkter och första testuppgift</summary>
-        <p>Eleven ska kunna logga in på GitHub, läsa e-post från GitHub, acceptera ITS-inbjudan, hitta och klona rätt repository, öppna projektet i VS Code, logga in i GitHub Copilot, göra en enkel ändring samt skapa en commit och pusha den.</p>
-        <p>Första testuppgiften: lägg till förnamn eller smeknamn, tre saker du vill lära dig under veckan och ett förslag på hur spelet ska se ut i <code>README.md</code>. Undvik efternamn, skola, klass och privata kontaktuppgifter.</p>
+        <p>Du ska kunna logga in på GitHub, läsa e-post från GitHub, ansluta kontot till ITS GitHub Enterprise-konto, forka rätt repo, klona det och öppna det i VS Code, logga in i Copilot, göra en enkel ändring samt skapa en commit och pusha den.</p><p>Första testuppgiften: skriv ett smeknamn, tre saker du vill lära dig under veckan och ett förslag på hur spelet ska se ut i <code>site/spel/README.md</code>. Använd inte efternamn, skola, klass eller privata kontaktuppgifter. Sidan är publik.</p>
       </details>
     </section>
 
@@ -50,34 +220,173 @@
       <h2>Tisdag: Webbutveckling och frågor till Copilot</h2>
       <article>
         <aside>
-          <p><strong>Dagens mål:</strong> Förstå grunderna i HTML, CSS och JavaScript samt börja forma spelets utseende.</p>
+          <p><strong>Dagens mål:</strong> Eleven ska förstå grunderna i HTML, CSS och JavaScript, skissa spelet och få en första version av det byggd.</p>
         </aside>
       </article>
-      <table>
-        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
-        <tbody>
-          <tr><td>09.00–09.30</td><td>Kort introduktion till HTML, CSS, JavaScript och webbläsaren</td></tr>
-          <tr><td>09.30–10.00</td><td>Fika</td></tr>
-          <tr><td>10.00–10.40</td><td>Copilot-övning: jämför vaga och tydliga frågor och planera intervjun med AI-verktyget i VS Code</td></tr>
-          <tr><td>10.40–11.10</td><td>Intervju 2: IT-support eller servicedesk (inspelad med tillstånd)</td></tr>
-          <tr><td>11.10–11.30</td><td>Transkribera inspelningen, skapa en kort AI-sammanfattning och planera eftermiddagen</td></tr>
-          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
-          <tr><td>12.30–13.00</td><td>Rita spelets gränssnitt på papper eller whiteboard</td></tr>
-          <tr><td>13.00–14.00</td><td>Skapa eller ändra spelplan, rubrik, instruktioner och startknapp</td></tr>
-          <tr><td>14.00–14.30</td><td>Testa varandras lösning och göra en enkel commit</td></tr>
-          <tr><td>14.30–15.00</td><td>Fika</td></tr>
-          <tr><td>15.00–15.20</td><td>Förbättra sidan efter testningen</td></tr>
-          <tr><td>15.20–15.30</td><td>Loggbok och nästa steg</td></tr>
-        </tbody>
-      </table>
+      <details>
+        <summary><strong>09.00–09.30</strong> Kort introduktion till HTML, CSS, JavaScript och webbläsaren</summary>
+        <p><strong>Mål:</strong> Du kan med egna ord beskriva vad HTML, CSS och JavaScript gör.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="begrepp/webbsidan.html">Hur en webbsida fungerar</a>, <a href="begrepp/html.html">HTML</a>, <a href="begrepp/css.html">CSS</a> och <a href="begrepp/javascript.html">JavaScript</a>.</li>
+          <li>Öppna <code>index.html</code>, <code>spel.css</code> och <code>spel.js</code>. Peka ut vad som är innehåll, vad som är utseende och vad som är beteende.</li>
+          <li>Ändra något litet i varje fil och se resultatet i webbläsaren.</li>
+          <li>Förklara skillnaden för handledaren med egna ord.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du kan förklara vad HTML, CSS och JavaScript gör var för sig.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Be agenten förklara en rad som du inte förstår, och förklara sedan med egna ord vad den svarade.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>09.30–10.00</strong> Fika</p>
+      <details>
+        <summary><strong>10.00–10.40</strong> Copilot-övning: jämför en vag och en tydlig fråga (10 min) och planera intervju 2 med agenten</summary>
+        <p><strong>Mål:</strong> Du har sett hur formuleringen av en fråga påverkar svaret, och har ett upplägg för intervju 2.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ställ först en vag fråga till agenten, till exempel <em>Gör ett spel.</em> Ställ sedan en tydlig: vem du är, vad du vill och hur svaret ska se ut. Jämför svaren. Det här tar högst 10 minuter.</li>
+          <li>Läs <a href="begrepp/copilot.html">Copilot och AI-assistenten</a>.</li>
+          <li>Planera intervju 2 (IT-support eller servicedesk) med agenten på samma sätt som på måndagen: låt agenten ställa frågor till dig, en i taget.</li>
+          <li>Ändra upplägget så att det blir ditt och skriv ner det på papper.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du kan förklara vad som gjorde den tydliga frågan bättre.</li>
+          <li>Du har 5–7 frågor till intervju 2.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>10.40–11.10</strong> Intervju 2: IT-support eller servicedesk (inspelad med tillstånd)</summary>
+        <p><strong>Mål:</strong> Du genomför en intervju på 20–30 minuter med en IT-supporttekniker eller servicedeskmedarbetare och får en inblick i yrkesrollen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Hälsa och berätta kort vad intervjun är till för.</li>
+          <li>Fråga om det är okej att spela in och förklara varför: veckan är en övning i att arbeta med AI, och inspelningen gör att du kan lyssna i stället för att anteckna allt.</li>
+          <li>Säger personen <strong>ja</strong>: starta inspelningen med det verktyg handledaren har anvisat. Säger personen <strong>nej</strong>: gör intervjun med anteckningar.</li>
+          <li>Ställ dina frågor ur din plan. Lyssna, och ställ följdfrågor, till exempel <em>kan du ge ett exempel?</em></li>
+          <li>Tacka personen. Lämna ljudfilen till handledaren. Lägg den aldrig på GitHub.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Intervjun är genomförd.</li>
+          <li>Ljudfilen är lämnad till handledaren, eller så har du anteckningar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Personen svarar kort: be om ett exempel.</li>
+          <li>Du tappar tråden: titta på din frågelista.</li>
+          <li>Personen ångrar sig om inspelningen: säg att det är helt okej och berätta för handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>11.10–11.30</strong> Transkribera, skapa AI-sammanfattning och planera eftermiddagen</summary>
+        <p><strong>Mål:</strong> Du har en kontrollerad sammanfattning av intervju 2.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ge ljudfilen från intervju 2 till handledaren, om du inte redan har gjort det. Handledaren transkriberar och ger dig texten.</li>
+          <li>Be agenten göra en kort sammanfattning av transkriptionen. Klistra inte in namnet på den du intervjuat.</li>
+          <li>Läs transkriptionen och kontrollera att sammanfattningen stämmer. Rätta det som är fel.</li>
+          <li>Skriv ner: en sak personen gör, ett verktyg personen använder, något som verkade roligt, något som verkade svårt och en ny fråga som intervjun väckte.</li>
+          <li>Planera eftermiddagen: vad ska du skissa, och vilket spel vill du bygga?</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en sammanfattning som du har kontrollerat mot transkriptionen.</li>
+          <li>Du har skrivit de fem punkterna.</li>
+          <li>Du vet vad du ska skissa.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Sammanfattningen innehåller något personen inte sa: ta bort det eller fråga handledaren.</li>
+          <li>Transkriptionen är inte klar än: gör det som inte beror på den först.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>11.30–12.30</strong> Lunch</p>
+      <details>
+        <summary><strong>12.30–13.00</strong> Rita spelets gränssnitt på papper eller whiteboard</summary>
+        <p><strong>Mål:</strong> Du har en skiss av ditt spel som du kan förklara på en minut.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ta ett papper eller en whiteboard.</li>
+          <li>Rita spelplanen och det spelaren styr.</li>
+          <li>Rita eller skriv vad som finns mer: mål, hinder, poäng eller fiender.</li>
+          <li>Skriv några ord om hur man vinner och hur man förlorar.</li>
+          <li>Bestäm hur spelaren styr, till exempel med piltangenter.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Skissen visar spelplan, spelare och vad som händer.</li>
+          <li>Du kan förklara den på en minut.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Tänk på ett spel du känner igen och ändra det. Börja med ett objekt som rör sig och ett mål.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>13.00–14.00</strong> Berätta om spelet för agenten och bygg första versionen</summary>
+        <p><strong>Mål:</strong> Agenten har byggt en första version av ditt spel som du kan öppna och testa.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna Copilot-chatten i VS Code i läget som låter agenten ändra filer.</li>
+          <li>Visa skissen och berätta om spelet med egna ord.</li>
+          <li>Svara på agentens frågor. Den ställer en fråga i taget. Du får säga <em>vet inte, vad föreslår du?</em></li>
+          <li>När du tycker att det räcker säger du till. Agenten bygger då första versionen i <code>site/spel</code>.</li>
+          <li>Öppna <code>site/spel/index.html</code> i webbläsaren och spela.</li>
+          <li>Fråga agenten kort vad den har gjort och var i koden.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Spelet går att öppna och du ser något av din skiss.</li>
+          <li>Dina idéer finns i <code>site/spel/ideer.md</code>.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Inget visas: tryck F12, öppna Console och berätta för agenten vad som står där.</li>
+          <li>Agenten frågar mycket: du bestämmer när det räcker. Säg <em>bygg nu</em>.</li>
+          <li>Det blev inte som du ville: det är normalt. Det rättar ni i testrundorna.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>14.00–14.30</strong> Testa varandras lösning och göra en enkel commit</summary>
+        <p><strong>Mål:</strong> Spelet är testat av någon mer än dig och en ändring är sparad på GitHub.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Låt en annan person spela spelet (en handledare, en kollega eller den andra eleven). Säg inte hur man gör.</li>
+          <li>Titta på hur de spelar och skriv ner vad som fungerar och inte fungerar.</li>
+          <li>Gör en commit med ett kort meddelande, till exempel <em>Första versionen av spelet</em>, och push.</li>
+          <li>Kontrollera att din sida har uppdaterats.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en lista över vad som fungerar och inte.</li>
+          <li>Din ändring finns på GitHub och på din sida.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>14.30–15.00</strong> Fika</p>
+      <details>
+        <summary><strong>15.00–15.20</strong> Förbättra sidan efter testningen</summary>
+        <p><strong>Mål:</strong> Du har förbättrat spelet efter vad testningen visade.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Titta på listan från testningen.</li>
+          <li>Berätta för agenten alla ändringar du vill ha.</li>
+          <li>När agenten har all information föreslår den att ändringarna görs. Säg ja.</li>
+          <li>Testa ändringarna och gör en commit.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Minst en förbättring är testad och sparad.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>15.20–15.30</strong> Loggbok och nästa steg</p>
       <details>
         <summary>Resultat efter tisdagen</summary>
-        <ul>
-          <li>Eleven kan beskriva HTML, CSS och JavaScript med egna ord.</li>
-          <li>Spelet har en synlig spelplan och tydliga instruktioner.</li>
-          <li>Eleven har tränat på att ställa tydliga frågor till Copilot.</li>
-          <li>Minst en ändring är sparad i GitHub.</li>
-        </ul>
+        <ul><li>Du kan beskriva HTML, CSS och JavaScript med egna ord.</li><li>Du har en skiss av spelet och en första version byggd av agenten.</li><li>Du har tränat på att ställa tydliga frågor till agenten.</li><li>Minst en ändring är sparad i GitHub.</li></ul>
       </details>
     </section>
 
@@ -85,39 +394,186 @@
       <h2>Onsdag: Göra spelet spelbart</h2>
       <article>
         <aside>
-          <p><strong>Dagens mål:</strong> Skapa spelets viktigaste spelmekanik i små, testbara steg.</p>
+          <p><strong>Dagens mål:</strong> Eleven ska testa och förbättra spelet i testrundor, där elevens önskemål styr vad som ändras.</p>
         </aside>
       </article>
-      <table>
-        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
-        <tbody>
-          <tr><td>09.00–09.30</td><td>Planera spelregler, styrning, vinst och förlust</td></tr>
-          <tr><td>09.30–10.00</td><td>Fika</td></tr>
-          <tr><td>10.00–10.30</td><td>Intervju 3: drift-, nätverks- eller DevOps-tekniker (planerad med AI, inspelad med tillstånd)</td></tr>
-          <tr><td>10.30–11.00</td><td>Transkribera, skapa AI-sammanfattning och dela upp programmeringen i små uppgifter</td></tr>
-          <tr><td>11.00–11.30</td><td>Börja med tangentbordsstyrning eller annan enkel interaktion</td></tr>
-          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
-          <tr><td>12.30–13.15</td><td>Fortsätta med spelarens rörelse och testa gränser</td></tr>
-          <tr><td>13.15–13.25</td><td>Kort bensträckare och rollbyte</td></tr>
-          <tr><td>13.25–14.10</td><td>Lägga till boll, mål eller annat rörligt objekt</td></tr>
-          <tr><td>14.10–14.30</td><td>Gemensam testning och commit</td></tr>
-          <tr><td>14.30–15.00</td><td>Fika</td></tr>
-          <tr><td>15.00–15.20</td><td>Fixa ett av de fel som testningen avslöjade</td></tr>
-          <tr><td>15.20–15.30</td><td>Loggbok och avstämning</td></tr>
-        </tbody>
-      </table>
       <details>
-        <summary>Onsdagens uppgiftslista</summary>
+        <summary><strong>09.00–09.30</strong> Planera intervju 3 med agenten</summary>
+        <p><strong>Mål:</strong> Du har ett eget upplägg för intervju 3 med en drift-, nätverks- eller DevOps-tekniker.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="intervjuer.html">Intervjuer</a>. Där finns process, etik och en frågebank som exempel. Du väljer själv vad du använder.</li>
+          <li>Öppna agenten (Copilot) i VS Code. Berätta vem du är, vem du ska intervjua och vad du är nyfiken på. Be agenten ställa frågor till dig, en i taget, så att den förstår vad du vill få ut av intervjun.</li>
+          <li>Be agenten föreslå ett upplägg: tema, 5–7 frågor och följdfrågor. Fråga gärna om vad som händer när något slutar fungera, och hur man håller koll på att allt fungerar.</li>
+          <li>Ändra upplägget så att det blir ditt. Stryk frågor som du inte förstår eller inte tycker är intressanta.</li>
+          <li>Skriv ner det färdiga upplägget på papper. Skriv inte in namnet på den du ska intervjua i repot.</li>
+          <li>Öva hur du ber om tillstånd att spela in.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
         <ul>
-          <li>Visa spelplanen.</li>
-          <li>Visa spelaren eller plattan.</li>
-          <li>Flytta spelaren med tangentbordet.</li>
-          <li>Hindra spelaren från att lämna spelplanen.</li>
-          <li>Visa ett mål, en boll eller ett hinder.</li>
-          <li>Skapa en enkel spelregel.</li>
-          <li>Testa efter varje liten ändring.</li>
+          <li>Du har 5–7 frågor som du förstår och kan ändra.</li>
+          <li>Du vet hur du ber om tillstånd att spela in.</li>
         </ul>
-        <p>Onsdag är sannolikt veckans mest tekniskt krävande dag. Handledaren bör vara extra tillgänglig och hjälpa eleven att minska uppgiften om de fastnar.</p>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Frågorna blir för allmänna: berätta för agenten vad du verkligen undrar över.</li>
+          <li>Du vet inte vad du är nyfiken på: välj en fråga ur frågebanken och bygg vidare.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>09.30–10.00</strong> Fika</p>
+      <details>
+        <summary><strong>10.00–10.30</strong> Intervju 3: drift-, nätverks- eller DevOps-tekniker (planerad med AI, inspelad med tillstånd)</summary>
+        <p><strong>Mål:</strong> Du genomför en intervju på 20–30 minuter med en drift-, nätverks- eller DevOps-tekniker och får en inblick i yrkesrollen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Hälsa och berätta kort vad intervjun är till för.</li>
+          <li>Fråga om det är okej att spela in och förklara varför: veckan är en övning i att arbeta med AI, och inspelningen gör att du kan lyssna i stället för att anteckna allt.</li>
+          <li>Säger personen <strong>ja</strong>: starta inspelningen med det verktyg handledaren har anvisat. Säger personen <strong>nej</strong>: gör intervjun med anteckningar.</li>
+          <li>Ställ dina frågor ur din plan. Lyssna, och ställ följdfrågor, till exempel <em>kan du ge ett exempel?</em></li>
+          <li>Tacka personen. Lämna ljudfilen till handledaren. Lägg den aldrig på GitHub.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Intervjun är genomförd.</li>
+          <li>Ljudfilen är lämnad till handledaren, eller så har du anteckningar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Personen svarar kort: be om ett exempel.</li>
+          <li>Du tappar tråden: titta på din frågelista.</li>
+          <li>Personen ångrar sig om inspelningen: säg att det är helt okej och berätta för handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>10.30–11.00</strong> Transkribera och skapa AI-sammanfattning</summary>
+        <p><strong>Mål:</strong> Du har en kontrollerad sammanfattning av intervju 3.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ge ljudfilen från intervju 3 till handledaren, om du inte redan har gjort det. Handledaren transkriberar och ger dig texten.</li>
+          <li>Be agenten göra en kort sammanfattning av transkriptionen. Klistra inte in namnet på den du intervjuat.</li>
+          <li>Läs transkriptionen och kontrollera att sammanfattningen stämmer. Rätta det som är fel.</li>
+          <li>Skriv ner: en sak personen gör, ett verktyg personen använder, något som verkade roligt, något som verkade svårt och en ny fråga som intervjun väckte.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en sammanfattning som du har kontrollerat mot transkriptionen.</li>
+          <li>Du har skrivit de fem punkterna.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Sammanfattningen innehåller något personen inte sa: ta bort det eller fråga handledaren.</li>
+          <li>Transkriptionen är inte klar än: gör det som inte beror på den först.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>11.00–11.30</strong> Testrunda 1</summary>
+        <p><strong>Mål:</strong> Du testar spelet, samlar önskemål och agenten genomför dem. Dina önskemål avgör vad som görs.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/index.html</code> och spela spelet. Du är navigatör: du läser, testar och bestämmer. Är ni två turas ni om.</li>
+          <li>Börja med styrningen. Spelet går inte att testa om du inte kan styra det.</li>
+          <li>Skriv ner vad som är bra, vad som är trasigt och vad du önskar att spelet kunde göra. Använd dina egna ord.</li>
+          <li>Berätta alla önskemål för agenten. Agenten frågar om det är något den inte förstår och sparar önskemålen i <code>site/spel/ideer.md</code>.</li>
+          <li>När agenten har all information föreslår den att ändringarna görs. Säg ja när du är redo.</li>
+          <li>Ladda om sidan och testa varje önskemål. Be agenten förklara kort vad den ändrade och var i koden.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Dina önskemål är genomförda eller bortvalda med en anledning.</li>
+          <li>Du har testat varje ändring i webbläsaren.</li>
+          <li>Du kan säga var i koden minst en ändring gjordes.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du vet inte vad du vill ändra: spela en gång till och fråga dig vad som är tråkigt eller svårt.</li>
+          <li>Något blev fel efter en ändring: berätta för agenten vad du förväntade dig, vad som hände och vad konsolen (F12) säger.</li>
+          <li>Agenten gör något annat än du ville: säg det med egna ord. Det är du som bestämmer.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>11.30–12.30</strong> Lunch</p>
+      <details>
+        <summary><strong>12.30–13.15</strong> Genomföra ändringar från testrunda 1 och testa dem</summary>
+        <p><strong>Mål:</strong> Du har gått igenom ändringarna från testrunda 1, förstått dem och testat dem.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Be agenten visa vilka filer och vilka delar av koden som ändrades.</li>
+          <li>Öppna en av ändringarna i VS Code och förklara med egna ord vad den gör.</li>
+          <li>Testa varje önskemål från testrunda 1 i webbläsaren.</li>
+          <li>Markera i <code>site/spel/ideer.md</code> vilka önskemål som är gjorda.</li>
+          <li>Det som inte blev rätt blir ett nytt önskemål som du berättar för agenten.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Alla önskemål från testrunda 1 är gjorda, testade eller flyttade till nästa runda.</li>
+          <li>Du kan förklara en ändring med egna ord.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du förstår inte koden: be agenten förklara rad för rad och förklara tillbaka.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>13.15–13.25</strong> Kort bensträckare och rollbyte</p>
+      <details>
+        <summary><strong>13.25–14.10</strong> Testrunda 2</summary>
+        <p><strong>Mål:</strong> Du testar spelet, samlar önskemål och agenten genomför dem. Dina önskemål avgör vad som görs.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/index.html</code> och spela spelet. Du är navigatör: du läser, testar och bestämmer. Är ni två turas ni om.</li>
+          <li>Skriv ner vad som är bra, vad som är trasigt och vad du önskar att spelet kunde göra. Använd dina egna ord.</li>
+          <li>Berätta alla önskemål för agenten. Agenten frågar om det är något den inte förstår och sparar önskemålen i <code>site/spel/ideer.md</code>.</li>
+          <li>När agenten har all information föreslår den att ändringarna görs. Säg ja när du är redo.</li>
+          <li>Ladda om sidan och testa varje önskemål. Be agenten förklara kort vad den ändrade och var i koden.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Dina önskemål är genomförda eller bortvalda med en anledning.</li>
+          <li>Du har testat varje ändring i webbläsaren.</li>
+          <li>Du kan säga var i koden minst en ändring gjordes.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du vet inte vad du vill ändra: spela en gång till och fråga dig vad som är tråkigt eller svårt.</li>
+          <li>Något blev fel efter en ändring: berätta för agenten vad du förväntade dig, vad som hände och vad konsolen (F12) säger.</li>
+          <li>Agenten gör något annat än du ville: säg det med egna ord. Det är du som bestämmer.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>14.10–14.30</strong> Gemensam testning och commit</summary>
+        <p><strong>Mål:</strong> Spelet är testat med en testlista och sparat på GitHub.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Spela spelet med en annan person om det går.</li>
+          <li>Gå igenom en enkel testlista: Öppnas spelet utan fel? Fungerar startknappen? Kan spelaren styras? Stannar spelaren på spelplanen? Förstår en annan person hur man spelar?</li>
+          <li>Skriv ner det som inte fungerar.</li>
+          <li>Gör en commit och push.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en testlista med ikryssade rader.</li>
+          <li>Ändringarna är pushade.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>14.30–15.00</strong> Fika</p>
+      <details>
+        <summary><strong>15.00–15.20</strong> Fixa ett av de fel som testningen avslöjade</summary>
+        <p><strong>Mål:</strong> Du har rättat ett fel som testningen visade.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Välj ett fel från listan.</li>
+          <li>Beskriv felet för agenten: vad du ville skulle hända, vad som hände i stället och vad konsolen (F12) säger.</li>
+          <li>Låt agenten rätta felet.</li>
+          <li>Testa att felet är borta och att inget annat har gått sönder.</li>
+          <li>Gör en commit.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Felet är borta och ändringen är sparad.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>15.20–15.30</strong> Loggbok och avstämning</p>
+      <details>
+        <summary>Resultat efter onsdagen</summary>
+        <ul><li>Du har gjort minst två testrundor.</li><li>Spelet går att starta och styra.</li><li>Du har testat med en testlista.</li><li>Minst en ändring är sparad på GitHub.</li></ul>
       </details>
     </section>
 
@@ -125,53 +581,370 @@
       <h2>Torsdag: Poäng, felsökning och förbättringar</h2>
       <article>
         <aside>
-          <p><strong>Dagens mål:</strong> Göra spelet tydligt och komplett på en grundläggande nivå samt visa hur utvecklare felsöker.</p>
+          <p><strong>Dagens mål:</strong> Eleven ska göra spelet tydligt och komplett på en grundläggande nivå samt lära sig hur utvecklare felsöker.</p>
         </aside>
       </article>
-      <table>
-        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
-        <tbody>
-          <tr><td>09.00–09.30</td><td>Genomgång av buggar, felmeddelanden och enkel felsökning</td></tr>
-          <tr><td>09.30–10.00</td><td>Fika</td></tr>
-          <tr><td>10.00–10.30</td><td>Intervju 4: UX-designer, testare eller projektledare (planerad med AI, inspelad med tillstånd)</td></tr>
-          <tr><td>10.30–11.00</td><td>Transkribera, skapa AI-sammanfattning och göra en enkel testplan</td></tr>
-          <tr><td>11.00–11.30</td><td>Felsökningsövning med ett avsiktligt enkelt fel</td></tr>
-          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
-          <tr><td>12.30–13.15</td><td>Lägga till poäng, vinst, förlust eller starta om</td></tr>
-          <tr><td>13.15–13.25</td><td>Kort bensträckare och rollbyte</td></tr>
-          <tr><td>13.25–14.10</td><td>Förbättra färger, instruktioner och spelkänsla</td></tr>
-          <tr><td>14.10–14.30</td><td>Testa spelet och prioritera återstående fel</td></tr>
-          <tr><td>14.30–15.00</td><td>Fika</td></tr>
-          <tr><td>15.00–15.20</td><td>Förbättra spelet efter testningen</td></tr>
-          <tr><td>15.20–15.30</td><td>Commit, loggbok och plan för fredagen</td></tr>
-        </tbody>
-      </table>
+      <details>
+        <summary><strong>09.00–09.30</strong> Planera intervju 4 med agenten</summary>
+        <p><strong>Mål:</strong> Du har ett eget upplägg för intervju 4 med en UX-designer, testare eller projektledare.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="intervjuer.html">Intervjuer</a>. Där finns process, etik och en frågebank som exempel. Du väljer själv vad du använder.</li>
+          <li>Öppna agenten (Copilot) i VS Code. Berätta vem du är, vem du ska intervjua och vad du är nyfiken på. Be agenten ställa frågor till dig, en i taget, så att den förstår vad du vill få ut av intervjun.</li>
+          <li>Be agenten föreslå ett upplägg: tema, 5–7 frågor och följdfrågor. Fråga gärna hur personen vet att något är bra, och hur man får flera personer att arbeta tillsammans.</li>
+          <li>Ändra upplägget så att det blir ditt. Stryk frågor som du inte förstår eller inte tycker är intressanta.</li>
+          <li>Skriv ner det färdiga upplägget på papper. Skriv inte in namnet på den du ska intervjua i repot.</li>
+          <li>Öva hur du ber om tillstånd att spela in.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har 5–7 frågor som du förstår och kan ändra.</li>
+          <li>Du vet hur du ber om tillstånd att spela in.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Frågorna blir för allmänna: berätta för agenten vad du verkligen undrar över.</li>
+          <li>Du vet inte vad du är nyfiken på: välj en fråga ur frågebanken och bygg vidare.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>09.30–10.00</strong> Fika</p>
+      <details>
+        <summary><strong>10.00–10.30</strong> Intervju 4: UX-designer, testare eller projektledare (planerad med AI, inspelad med tillstånd)</summary>
+        <p><strong>Mål:</strong> Du genomför en intervju på 20–30 minuter med en UX-designer, testare eller projektledare och får en inblick i yrkesrollen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Hälsa och berätta kort vad intervjun är till för.</li>
+          <li>Fråga om det är okej att spela in och förklara varför: veckan är en övning i att arbeta med AI, och inspelningen gör att du kan lyssna i stället för att anteckna allt.</li>
+          <li>Säger personen <strong>ja</strong>: starta inspelningen med det verktyg handledaren har anvisat. Säger personen <strong>nej</strong>: gör intervjun med anteckningar.</li>
+          <li>Ställ dina frågor ur din plan. Lyssna, och ställ följdfrågor, till exempel <em>kan du ge ett exempel?</em></li>
+          <li>Tacka personen. Lämna ljudfilen till handledaren. Lägg den aldrig på GitHub.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Intervjun är genomförd.</li>
+          <li>Ljudfilen är lämnad till handledaren, eller så har du anteckningar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Personen svarar kort: be om ett exempel.</li>
+          <li>Du tappar tråden: titta på din frågelista.</li>
+          <li>Personen ångrar sig om inspelningen: säg att det är helt okej och berätta för handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>10.30–11.00</strong> Transkribera, skapa AI-sammanfattning och göra en enkel testplan</summary>
+        <p><strong>Mål:</strong> Du har en kontrollerad sammanfattning av intervju 4.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ge ljudfilen från intervju 4 till handledaren, om du inte redan har gjort det. Handledaren transkriberar och ger dig texten.</li>
+          <li>Be agenten göra en kort sammanfattning av transkriptionen. Klistra inte in namnet på den du intervjuat.</li>
+          <li>Läs transkriptionen och kontrollera att sammanfattningen stämmer. Rätta det som är fel.</li>
+          <li>Skriv ner: en sak personen gör, ett verktyg personen använder, något som verkade roligt, något som verkade svårt och en ny fråga som intervjun väckte.</li>
+          <li>Gör en enkel testplan för ditt spel: en lista med rader som <em>Startknappen fungerar</em>, <em>Spelaren stannar på spelplanen</em>, <em>Poängen ändras när den ska</em> och <em>En annan person förstår hur man spelar</em>. Anpassa den så att den passar ditt spel.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en sammanfattning som du har kontrollerat mot transkriptionen.</li>
+          <li>Du har skrivit de fem punkterna.</li>
+          <li>Du har en testplan med minst sju rader.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Sammanfattningen innehåller något personen inte sa: ta bort det eller fråga handledaren.</li>
+          <li>Transkriptionen är inte klar än: gör det som inte beror på den först.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>11.00–11.30</strong> Felsökning: genomgång av buggar och felmeddelanden, och övning med ett avsiktligt fel</summary>
+        <p><strong>Mål:</strong> Du kan hitta ett fel i koden genom att läsa felmeddelandet, öppna rätt rad och förklara vad som är fel.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="begrepp/felsokning.html">Felsökning</a>.</li>
+          <li>Öppna spelet och tryck F12. Titta på fliken <strong>Console</strong>.</li>
+          <li>Handledaren har lagt in ett litet fel i spelet. Beskriv vad som händer i stället för det som skulle hända.</li>
+          <li>Läs felmeddelandet. Det anger fil och radnummer, till exempel <code>spel.js:12</code>.</li>
+          <li>Öppna filen och gå till raden. Be agenten förklara raden rad för rad.</li>
+          <li>Ändra en sak, spara och testa.</li>
+          <li>Förklara med egna ord vad felet var och hur du hittade det.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Felet är rättat.</li>
+          <li>Du kan förklara hur du hittade det.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du hittar inget felmeddelande: ladda om sidan med konsolen öppen.</li>
+          <li>Du förstår inte raden: be agenten förklara och förklara sedan tillbaka.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>11.30–12.30</strong> Lunch</p>
+      <details>
+        <summary><strong>12.30–13.15</strong> Testrunda 3</summary>
+        <p><strong>Mål:</strong> Du testar spelet, samlar önskemål och agenten genomför dem. Dina önskemål avgör vad som görs.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/index.html</code> och spela spelet. Du är navigatör: du läser, testar och bestämmer. Är ni två turas ni om.</li>
+          <li>Skriv ner vad som är bra, vad som är trasigt och vad du önskar att spelet kunde göra. Använd dina egna ord.</li>
+          <li>Berätta alla önskemål för agenten. Agenten frågar om det är något den inte förstår och sparar önskemålen i <code>site/spel/ideer.md</code>.</li>
+          <li>När agenten har all information föreslår den att ändringarna görs. Säg ja när du är redo.</li>
+          <li>Ladda om sidan och testa varje önskemål. Be agenten förklara kort vad den ändrade och var i koden.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Dina önskemål är genomförda eller bortvalda med en anledning.</li>
+          <li>Du har testat varje ändring i webbläsaren.</li>
+          <li>Du kan säga var i koden minst en ändring gjordes.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du vet inte vad du vill ändra: spela en gång till och fråga dig vad som är tråkigt eller svårt.</li>
+          <li>Något blev fel efter en ändring: berätta för agenten vad du förväntade dig, vad som hände och vad konsolen (F12) säger.</li>
+          <li>Agenten gör något annat än du ville: säg det med egna ord. Det är du som bestämmer.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>13.15–13.25</strong> Kort bensträckare och rollbyte</p>
+      <details>
+        <summary><strong>13.25–14.10</strong> Testrunda 4</summary>
+        <p><strong>Mål:</strong> Du testar spelet, samlar önskemål och agenten genomför dem. Dina önskemål avgör vad som görs.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/index.html</code> och spela spelet. Du är navigatör: du läser, testar och bestämmer. Är ni två turas ni om.</li>
+          <li>Skriv ner vad som är bra, vad som är trasigt och vad du önskar att spelet kunde göra. Använd dina egna ord.</li>
+          <li>Berätta alla önskemål för agenten. Agenten frågar om det är något den inte förstår och sparar önskemålen i <code>site/spel/ideer.md</code>.</li>
+          <li>När agenten har all information föreslår den att ändringarna görs. Säg ja när du är redo.</li>
+          <li>Ladda om sidan och testa varje önskemål. Be agenten förklara kort vad den ändrade och var i koden.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Dina önskemål är genomförda eller bortvalda med en anledning.</li>
+          <li>Du har testat varje ändring i webbläsaren.</li>
+          <li>Du kan säga var i koden minst en ändring gjordes.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du vet inte vad du vill ändra: spela en gång till och fråga dig vad som är tråkigt eller svårt.</li>
+          <li>Något blev fel efter en ändring: berätta för agenten vad du förväntade dig, vad som hände och vad konsolen (F12) säger.</li>
+          <li>Agenten gör något annat än du ville: säg det med egna ord. Det är du som bestämmer.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>14.10–14.30</strong> Testa spelet och prioritera återstående fel</summary>
+        <p><strong>Mål:</strong> Du har en prioriterad lista över vad som ska rättas före fredag.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Gå igenom din testplan från morgonen och spela spelet.</li>
+          <li>Skriv en lista över alla fel du hittar.</li>
+          <li>Sortera listan i tre grupper: <em>måste fixas</em>, <em>kan vänta</em> och <em>gör vi inte</em>.</li>
+          <li>Välj högst tre fel som ska rättas före fredag.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Listan är sorterad och du har valt högst tre fel.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>14.30–15.00</strong> Fika</p>
+      <details>
+        <summary><strong>15.00–15.20</strong> Förbättra spelet efter testningen</summary>
+        <p><strong>Mål:</strong> Du har rättat det viktigaste som testningen visade.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Börja med det viktigaste felet på din lista.</li>
+          <li>Beskriv felet för agenten: vad du ville skulle hända, vad som hände och vad konsolen säger.</li>
+          <li>När agenten har all information föreslår den att felet rättas. Säg ja.</li>
+          <li>Testa och gå vidare till nästa fel.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>De fel du hann med är rättade och testade.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>15.20–15.30</strong> Commit och plan för fredagen</summary>
+        <p><strong>Mål:</strong> Dagens arbete är sparat och du har en plan för fredagen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Gör en commit med ett tydligt meddelande och push.</li>
+          <li>Skriv ner vad som ska göras på fredag: högst två små förbättringar.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Allt är pushat och din sida visar den senaste versionen.</li>
+          <li>Du har en lista för fredag.</li>
+        </ul>
+      </details>
     </section>
 
     <section id="fredag">
       <h2>Fredag: Yrkesbild, presentation och avslutning</h2>
       <article>
         <aside>
-          <p><strong>Dagens mål:</strong> Sammanfatta veckan, färdigställa ett stabilt resultat och visa vad eleven har lärt sig.</p>
+          <p><strong>Dagens mål:</strong> Eleven ska sammanfatta veckan, färdigställa ett stabilt resultat och visa vad hen har lärt sig.</p>
         </aside>
       </article>
-      <table>
-        <thead><tr><th>Tid</th><th>Aktivitet</th></tr></thead>
-        <tbody>
-          <tr><td>09.00–09.30</td><td>Veckoretro: vad är klart, vad återstår och vad är viktigast?</td></tr>
-          <tr><td>09.30–10.00</td><td>Fika</td></tr>
-          <tr><td>10.00–10.30</td><td>Intervju 5: IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare (planerad med AI, inspelad med tillstånd)</td></tr>
-          <tr><td>10.30–11.00</td><td>Transkribera, skapa AI-sammanfattning och jämföra de fem yrkesrollerna</td></tr>
-          <tr><td>11.00–11.30</td><td>Sluttest och val av högst två små förbättringar</td></tr>
-          <tr><td>11.30–12.30</td><td>Lunch</td></tr>
-          <tr><td>12.30–13.15</td><td>Rätta viktiga fel och städa projektet</td></tr>
-          <tr><td>13.15–13.45</td><td>Skriva klart README och instruktioner</td></tr>
-          <tr><td>13.45–14.30</td><td>Förbereda och öva presentationen</td></tr>
-          <tr><td>14.30–15.00</td><td>Fika</td></tr>
-          <tr><td>15.00–15.20</td><td>Presentation och spelvisning för handledare och några kollegor</td></tr>
-          <tr><td>15.20–15.30</td><td>Återkoppling, avslutning och tack</td></tr>
-        </tbody>
-      </table>
+      <details>
+        <summary><strong>09.00–09.30</strong> Planera intervju 5 med agenten</summary>
+        <p><strong>Mål:</strong> Du har ett eget upplägg för intervju 5 med en IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Läs <a href="intervjuer.html">Intervjuer</a>. Där finns process, etik och en frågebank som exempel. Du väljer själv vad du använder.</li>
+          <li>Öppna agenten (Copilot) i VS Code. Berätta vem du är, vem du ska intervjua och vad du är nyfiken på. Be agenten ställa frågor till dig, en i taget, så att den förstår vad du vill få ut av intervjun.</li>
+          <li>Be agenten föreslå ett upplägg: tema, 5–7 frågor och följdfrågor. Fråga gärna om vilka beslut personen fattar och hur man ser till att IT hänger ihop i en stor organisation.</li>
+          <li>Ändra upplägget så att det blir ditt. Stryk frågor som du inte förstår eller inte tycker är intressanta.</li>
+          <li>Skriv ner det färdiga upplägget på papper. Skriv inte in namnet på den du ska intervjua i repot.</li>
+          <li>Öva hur du ber om tillstånd att spela in.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har 5–7 frågor som du förstår och kan ändra.</li>
+          <li>Du vet hur du ber om tillstånd att spela in.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Frågorna blir för allmänna: berätta för agenten vad du verkligen undrar över.</li>
+          <li>Du vet inte vad du är nyfiken på: välj en fråga ur frågebanken och bygg vidare.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>09.30–10.00</strong> Fika</p>
+      <details>
+        <summary><strong>10.00–10.30</strong> Intervju 5: IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare (planerad med AI, inspelad med tillstånd)</summary>
+        <p><strong>Mål:</strong> Du genomför en intervju på 20–30 minuter med en IT-arkitekt, säkerhetsspecialist, chef eller förvaltningsledare och får en inblick i yrkesrollen.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Hälsa och berätta kort vad intervjun är till för.</li>
+          <li>Fråga om det är okej att spela in och förklara varför: veckan är en övning i att arbeta med AI, och inspelningen gör att du kan lyssna i stället för att anteckna allt.</li>
+          <li>Säger personen <strong>ja</strong>: starta inspelningen med det verktyg handledaren har anvisat. Säger personen <strong>nej</strong>: gör intervjun med anteckningar.</li>
+          <li>Ställ dina frågor ur din plan. Lyssna, och ställ följdfrågor, till exempel <em>kan du ge ett exempel?</em></li>
+          <li>Tacka personen. Lämna ljudfilen till handledaren. Lägg den aldrig på GitHub.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Intervjun är genomförd.</li>
+          <li>Ljudfilen är lämnad till handledaren, eller så har du anteckningar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Personen svarar kort: be om ett exempel.</li>
+          <li>Du tappar tråden: titta på din frågelista.</li>
+          <li>Personen ångrar sig om inspelningen: säg att det är helt okej och berätta för handledaren.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>10.30–11.00</strong> Transkribera, skapa AI-sammanfattning och jämföra de fem yrkesrollerna</summary>
+        <p><strong>Mål:</strong> Du har en kontrollerad sammanfattning av intervju 5.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Ge ljudfilen från intervju 5 till handledaren, om du inte redan har gjort det. Handledaren transkriberar och ger dig texten.</li>
+          <li>Be agenten göra en kort sammanfattning av transkriptionen. Klistra inte in namnet på den du intervjuat.</li>
+          <li>Läs transkriptionen och kontrollera att sammanfattningen stämmer. Rätta det som är fel.</li>
+          <li>Skriv ner: en sak personen gör, ett verktyg personen använder, något som verkade roligt, något som verkade svårt och en ny fråga som intervjun väckte.</li>
+          <li>Gör en tabell över alla fem yrkesroller: vad gör rollen, vilka verktyg används, vad är roligt och vad är svårt.</li>
+          <li>Skriv vad som överraskade dig mest.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har en sammanfattning som du har kontrollerat mot transkriptionen.</li>
+          <li>Du har skrivit de fem punkterna.</li>
+          <li>Du har en jämförelse av alla fem yrkesroller.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Sammanfattningen innehåller något personen inte sa: ta bort det eller fråga handledaren.</li>
+          <li>Transkriptionen är inte klar än: gör det som inte beror på den först.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>11.00–11.30</strong> Sluttest och val av högst två små förbättringar</summary>
+        <p><strong>Mål:</strong> Du har provat hela spelet en sista gång och valt högst två små förbättringar.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Gå igenom testplanen från torsdagen och spela hela spelet.</li>
+          <li>Skriv ner det som fortfarande inte fungerar.</li>
+          <li>Välj högst två små förbättringar. Stora nya idéer får vänta.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har högst två förbättringar på listan.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>11.30–12.30</strong> Lunch</p>
+      <details>
+        <summary><strong>12.30–13.15</strong> Rätta viktiga fel och städa projektet</summary>
+        <p><strong>Mål:</strong> De viktigaste felen är rättade och projektet är städat.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Berätta för agenten om dina två förbättringar och låt den genomföra dem.</li>
+          <li>Testa en gång till med testplanen.</li>
+          <li>Be agenten hitta kod och kommentarer som inte används. Granska förslagen innan de tas bort.</li>
+          <li>Gör en commit och push.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Spelet fungerar enligt testplanen.</li>
+          <li>Allt är pushat och din sida visar den senaste versionen.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Något har gått sönder: berätta för agenten vad som hände. Fråga handledaren om du är osäker på hur du går tillbaka till senaste commit.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>13.15–13.45</strong> Skriva klart README och instruktioner</summary>
+        <p><strong>Mål:</strong> README och spelinstruktion beskriver spelet så att en annan person kan förstå det.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna <code>site/spel/README.md</code>.</li>
+          <li>Skriv rubrikerna <em>Om spelet</em>, <em>Så spelar man</em>, <em>Teknik</em>, <em>Vad vi lärde oss</em> och <em>Kända begränsningar</em>. Be agenten hjälpa dig med formen, men skriv innehållet själv.</li>
+          <li>Kontrollera att spelinstruktionen i <code>index.html</code> stämmer med spelet.</li>
+          <li>Läs igenom allt: inga personuppgifter. Sidan är publik.</li>
+          <li>Gör en commit och push.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>README och spelinstruktion stämmer med spelet.</li>
+          <li>Ingen personlig information finns i dem.</li>
+        </ul>
+      </details>
+      <details>
+        <summary><strong>13.45–14.30</strong> Förbereda och öva presentationen</summary>
+        <p><strong>Mål:</strong> Du har en presentation på 10–15 minuter som du har övat högt.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Skriv stolpar för vad du ska berätta: vad ITS gör, de fem yrkesrollerna, något som överraskade dig, hur spelet fungerar och hur du använde agenten.</li>
+          <li>Lägg till: ett problem du löste, något du är stolt över och om din bild av programmeraryrket har förändrats.</li>
+          <li>Bestäm vad du visar i spelet.</li>
+          <li>Öva hela presentationen högt, helst för handledaren. Är ni två ska båda prata och visa något.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Du har stolpar för alla punkter.</li>
+          <li>Du har övat och vet ungefär hur lång tid den tar.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Du vet inte vad du ska säga om något: fråga agenten vilka frågor en publik kan ställa.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>14.30–15.00</strong> Fika</p>
+      <details>
+        <summary><strong>15.00–15.20</strong> Presentation och spelvisning för handledare och några kollegor</summary>
+        <p><strong>Mål:</strong> Du visar upp spelet och berättar om veckan.</p>
+        <p><strong>Gör så här</strong></p>
+        <ol>
+          <li>Öppna din sida: <code>https://ANVÄNDARNAMN.github.io/prao-its/</code>, där ANVÄNDARNAMN är ditt användarnamn.</li>
+          <li>Presentera enligt dina stolpar och spela spelet.</li>
+          <li>Svara på frågor.</li>
+        </ol>
+        <p><strong>Klart när</strong></p>
+        <ul>
+          <li>Presentationen är genomförd.</li>
+        </ul>
+        <p><strong>Fastnar du?</strong></p>
+        <ul>
+          <li>Spelet startar inte: öppna <code>site/spel/index.html</code> lokalt som reserv.</li>
+        </ul>
+      </details>
+      <p class="paus"><strong>15.20–15.30</strong> Återkoppling, avslutning och tack</p>
       <p>Undvik att lägga till stora nya funktioner under fredagen. Ett enkelt spel som fungerar är bättre än ett avancerat spel som inte går att demonstrera.</p>
     </section>
   </main>

@@ -35,7 +35,7 @@
       <p>ITS GitHub-administratör ska före veckan besluta vilken kontomodell som gäller. Rekommenderad modell för en kort PRAO:</p>
       <ol>
         <li>Eleven använder ett eget personligt GitHub-konto.</li>
-        <li>Kontona bjuds tillfälligt in till en avgränsad ITS-organisation, ett team eller specifika privata repositoryn.</li>
+        <li>Eleven ansöker själv om att ansluta kontot till ITS GitHub Enterprise-konto på måndag, och handledaren godkänner.</li>
         <li>Eleven får endast den behörighet som behövs för PRAO-projektet.</li>
         <li>Eleven tilldelas en tillfällig GitHub Copilot-licens.</li>
         <li>All ITS-åtkomst och alla tillfälliga licenser tas bort efter veckan.</li>
@@ -43,12 +43,12 @@
       <details>
         <summary>Behörighetsprinciper</summary>
         <ul>
-          <li>Använd privata PRAO-repositoryn.</li>
-          <li>Ge normalt skrivbehörighet, inte administratörsbehörighet.</li>
+          <li>Eleven forkar materialets repo. Forken är publik.</li>
+          <li>Ge ingen administratörsbehörighet i ITS Enterprise.</li>
           <li>Ge ingen åtkomst till produktionskod eller ordinarie interna repositoryn.</li>
           <li>Använd vid behov ett särskilt tillfälligt team, exempelvis <code>prao-vecka</code>.</li>
           <li>Använd endast exempeldata och spelkod.</li>
-          <li>Publicera inte spelet på internet om detta inte har godkänts i förväg.</li>
+          <li>Varje push publiceras öppet på internet via GitHub Pages. Publiceringen ska vara godkänd i förväg.</li>
         </ul>
         <p>Om ITS använder centralt hanterade GitHub-identiteter ska GitHub Enterprise-administratören avgöra om andra typer av konton krävs. Kontomodellen ska vara beslutad och testad innan eleven anländer.</p>
       </details>
@@ -61,13 +61,13 @@
         <li>Bestäm vilken typ av GitHub-konto eleven ska använda.</li>
         <li>Kontrollera rutiner för minderåriga och externa molntjänster.</li>
         <li>Förankra upplägget med GitHub Enterprise-administratören.</li>
-        <li>Säkerställ att eleven kan bjudas in med begränsad behörighet.</li>
+        <li>Säkerställ att eleven kan ansöka om anslutning och få en Copilot-licens.</li>
         <li>Reservera en GitHub Copilot-licens per elev.</li>
-        <li>Skapa privata och avgränsade PRAO-repositoryn.</li>
+        <li>Kontrollera att materialets repo är publikt och att GitHub Pages-workflowen fungerar i en testfork.</li>
         <li>Boka fem intervjupersoner med olika yrkesroller och meddela att intervjun spelas in och varför.</li>
-        <li>Förbered en enkel samtyckesrutin och ett sätt att transkribera ljud.</li>
+        <li>Förbered en enkel samtyckesrutin och ett sätt att transkribera ljud. Eleven lämnar ljudfilen till dig och får transkriptionen tillbaka.</li>
         <li>Bestäm var inspelningar och transkriptioner lagras, vem som har åtkomst och när de raderas.</li>
-        <li>Förbered ett enkelt startprojekt för spelet.</li>
+        <li>Kontrollera att startprojektet i <code>site/spel/</code> fungerar.</li>
         <li>Förbered ett lokalt reservprojekt som fungerar utan GitHub och Copilot.</li>
         <li>Testa nätverk, GitHub, Copilot och ljudinspelning i aktuell datormiljö.</li>
         <li>Säkerställ att inga känsliga system eller uppgifter kommer att visas.</li>
@@ -86,7 +86,7 @@
         <li>Modern webbläsare</li>
         <li>Verktyg för ljudinspelning och transkribering</li>
       </ul>
-      <p>Eleven kan själv logga in, öppna VS Code, ansluta till GitHub, aktivera GitHub Copilot, klona sitt PRAO-repository och göra en teständring.</p>
+      <p>Eleven kan själv logga in, öppna VS Code, ansluta till GitHub, aktivera GitHub Copilot, forka och klona repot och göra en teständring.</p>
     </section>
 
     <section>
@@ -98,13 +98,13 @@
       </article>
       <ol>
         <li>Lägg aldrig lösenord, nycklar eller tokens i koden.</li>
-        <li>Lägg aldrig riktiga personuppgifter i spelet eller README-filen.</li>
+        <li>Lägg aldrig riktiga personuppgifter i spelet eller README-filen. Repot och sidan är publika.</li>
         <li>Spela endast in intervjuer med uttryckligt tillstånd. Lägg inte inspelningar eller transkriptioner i GitHub-repositoryt.</li>
         <li>Kopiera inte intern universitetskod eller intern information till Copilot.</li>
         <li>Skriv inte information från interna system i frågor till Copilot.</li>
         <li>Installera inte program eller tillägg utan att fråga handledaren.</li>
         <li>Öppna endast system och repositoryn som handledaren har anvisat.</li>
-        <li>Acceptera inte kod från Copilot utan att först försöka förstå och testa den.</li>
+        <li>Godkänn inte en ändring från agenten utan att först testa den, och försök förstå vad den gör.</li>
         <li>Fråga handledaren om något verkar oklart, känsligt eller osäkert.</li>
       </ol>
     </section>
